@@ -1,3 +1,10 @@
+$resp1920:                              1920px;
+$resp1400:                              1400px;
+$resp1200:                              1200px;
+$resp1025:                              1025px;
+$resp768:                               768px;
+$resp320:                               320px;
+
 $h1_fsize:          64px;
 $h2_fsize:          48px;
 $h3_fsize:          36px;
@@ -12,5 +19,18 @@ $color_yellow:      #FFAD0D;
 $color_grey:        #393D3F;
 $color_dark:        #202020;
 
+$color_bg:              #E5E5E5;
+
 $grid_col_paddings: 15px;
-$grid_width:        1720px;
+$grid_width:                      1720px;
+
+$navbar_height:                   110px;
+$navbar_items_color:            #ffffff;
+
+$navbar_phone_color:                $color_brown-light;
+
+$button_font_size:                 16px; 
+$button_bordered_color:            #C4C4C4;
+$button_bordered_color_txt:        $button_bordered_color;
+$button_bordered_color_h:          #FFAD0D;
+$button_bordered_color_h_txt:      $color_brown-dark;

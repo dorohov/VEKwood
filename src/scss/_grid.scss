@@ -2,12 +2,14 @@
     max-width: $grid_width + ($grid_col_paddings * 2);
     width: 100%;
     margin: 0 auto;
+    padding: 0 $grid_col_paddings;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    margin: 0 -$grid_col_paddings;
 }
 
 .col {

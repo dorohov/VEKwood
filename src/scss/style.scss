@@ -1,7 +1,13 @@
 @import "../../fonts/stylesheet.css";
+@import "hamburgers/hamburgers.scss";
 
 @import "var";
 @import "normalize";
 @import "base";
 @import "typography";
 @import "grid";
+@import "navbar";
+@import "buttons";
+
+// Большой слайдер на главной странице
+@import "slider";

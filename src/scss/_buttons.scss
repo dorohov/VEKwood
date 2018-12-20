@@ -1,0 +1,29 @@
+.button {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: $button_font_size;
+    letter-spacing: .1em;
+    line-height: $button_font_size;
+    transition: .25s all ease;
+    &.is--bordered {
+        padding: 16px 32px 13px 32px;
+        border: 2px solid $button_bordered_color;
+        color: $button_bordered_color_txt;
+        background: transparent;
+        &:hover {
+            border-color: $button_bordered_color_h;
+            background: $button_bordered_color_h;
+            color: $button_bordered_color_h_txt;
+        }
+    }
+}
+
+@media (max-width: $resp1400){
+    .button {
+        &.is--bordered {
+            padding: 10px 15px;
+            font-size: 14px;
+            line-height: 14px;
+        }
+    }
+}
