@@ -1,0 +1,17 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $color_brown-dark;
+    line-height: normal;
+    margin: 0;
+}
+
+h1 {font-size: $h1_fsize;}
+h2 {font-size: $h2_fsize;}
+h3 {font-size: $h3_fsize;}
+h4 {font-size: $h4_fsize;}
+h5 {font-size: $h5_fsize;}
+h6 {font-size: $h6_fsize;}

@@ -1,0 +1,21 @@
+.container {
+    max-width: $grid_width + ($grid_col_paddings * 2);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.col {
+    @for $i from 1 through 12 {
+        &-#{$i} {
+            width: ($i * 100) / 12 * 1%;
+            padding: 0 $grid_col_paddings;
+            box-sizing: border-box;
+        }
+    }
+}
