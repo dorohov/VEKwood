@@ -104,7 +104,7 @@ gulp.task('browser_sync', browser_sync)
 
 gulp.task('build', function() {
     gulp.watch('src/html/**/*.html', gulp.series('html'))
-    gulp.watch(assets.sass, gulp.series('css'))
+    gulp.watch('src/scss/**/*.scss', gulp.series('css'))
     gulp.watch(assets.js, gulp.series('js'))
     // gulp.watch(assets.fonts, gulp.series('fonts'))
     gulp.watch(assets.svg, gulp.series('svgMap'))

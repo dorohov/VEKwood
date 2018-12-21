@@ -8,7 +8,8 @@
 <link rel="stylesheet" href="dist/css/style.css">
 </head>
 <body>
-    <div class="navbar is--opacity t--opacity">
+    <header>
+        <div class="navbar is--opacity t--opacity">
     <div class="navbar__inner">
         <div class="navbar__logo">
             <a href="#">
@@ -22,19 +23,27 @@
         </div>
         <div class="navbar__menu">
             <ul>
-                <li class="navbar__menu--item"><a href="#" class="navbar__menu--link">Каркасные дома</a></li>
-                <li class="navbar__menu--item"><a href="#" class="navbar__menu--link">Двойной брус</a></li>
-                <li class="navbar__menu--item"><a href="#" class="navbar__menu--link">Деревянные фермы</a></li>
-                <li class="navbar__menu--item"><a href="#" class="navbar__menu--link">Проектирование</a></li>
-                <li class="navbar__menu--item"><a href="#" class="navbar__menu--link">О компании</a></li>
+    <li class="navbar__menu--item"><a href="#" class="navbar__menu--link">Каркасные дома</a></li>
+    <li class="navbar__menu--item"><a href="#" class="navbar__menu--link">Двойной брус</a></li>
+    <li class="navbar__menu--item"><a href="#" class="navbar__menu--link">Деревянные фермы</a></li>
+    <li class="navbar__menu--item"><a href="#" class="navbar__menu--link">Проектирование</a></li>
+    <li class="navbar__menu--item navbar__menu--dropdown">
+        <a href="#" class="navbar__menu--link">О компании</a>
+        <div class="navbar__menu--dropdown__c">
+            <ul class="navbar__menu--dropdown__c__in">
+                <li class="navbar__menu--dropdown__i"><a href="#" class="navbar__menu--dropdown__l">Производство</a></li>
+                <li class="navbar__menu--dropdown__i"><a href="#" class="navbar__menu--dropdown__l">Контакты</a></li>
             </ul>
+        </div>
+    </li>
+</ul>
         </div>
         <div class="navbar__btn">
             <a href="#" class="is--bordered button">Выбрать дом</a>
         </div>
-        <div class="navbar__phone">
-            <a href="tel:+79102623232">+7 (910) <span>262-32-32</span></a>
-        </div>
+        <div class="navbar__phone ">
+    <a href="tel:+79102623232">+7 (910) <span>262-32-32</span></a>
+</div>
         <div class="navbar__mobile--btn">
             <button class="hamburger hamburger--spring" type="button">
                 <span class="hamburger-box">
@@ -43,110 +52,64 @@
             </button>
         </div>
         <div class="navbar__mobile--container">
-            
+            <div class="navbar__mobile--menu">
+                <ul>
+    <li class="navbar__mobile--item"><a href="#" class="navbar__mobile--link">Каркасные дома</a></li>
+    <li class="navbar__mobile--item"><a href="#" class="navbar__mobile--link">Двойной брус</a></li>
+    <li class="navbar__mobile--item"><a href="#" class="navbar__mobile--link">Деревянные фермы</a></li>
+    <li class="navbar__mobile--item"><a href="#" class="navbar__mobile--link">Проектирование</a></li>
+    <li class="navbar__mobile--item navbar__mobile--dropdown">
+        <a href="#" class="navbar__mobile--link">О компании</a>
+        <div class="navbar__mobile--dropdown__c">
+            <ul class="navbar__mobile--dropdown__c__in">
+                <li class="navbar__mobile--dropdown__i"><a href="#" class="navbar__mobile--dropdown__l">Производство</a></li>
+                <li class="navbar__mobile--dropdown__i"><a href="#" class="navbar__mobile--dropdown__l">Контакты</a></li>
+            </ul>
+        </div>
+    </li>
+</ul>
+            </div>
+            <div class="navbar__phone is--mobile">
+    <a href="tel:+79102623232">+7 (910) <span>262-32-32</span></a>
+</div>
         </div>
     </div>
 </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+        <div class="slider">
+    <ul class="slider__inner">
+        <li class="slider__item">
+            <div class="slider__item__inner">
+                <div class="slider__item__elements">
+                    <div class="slider__item__info">
+                        <div class="slider__item__header">
+                            Каркасный домокомплект
+                            <span>Айсберг 130 м2</span>
+                        </div>
+                        <div class="slider__item__price">470 000</div>
+                        <div class="slider__item__btn">
+                            <a href="#" class="is--classic button">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item__bg">
+                    <div class="slider__item__bl"></div>
+                    <div class="slider__item__img" style="background-image: url(img/slide1.jpg)"></div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div class="slider__soc">
+        <ul>
+            <li><a href="#"><img src="img/svg/sprites.svg#youtube" alt=""></a></li>
+            <li><a href="#"><img src="img/svg/sprites.svg#vk" alt=""></a></li>
+            <li><a href="#"><img src="img/svg/sprites.svg#instagram" alt=""></a></li>
+        </ul>
+    </div>
+</div>
+    </header>
+    <main>
+        
+    </main>
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
 <script src="./dist/js/main.js"></script>
 </body>

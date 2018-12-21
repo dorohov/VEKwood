@@ -11,13 +11,7 @@
             </a>
         </div>
         <div class="navbar__menu">
-            <ul>
-                <li class="navbar__menu--item"><a href="#" class="navbar__menu--link">Каркасные дома</a></li>
-                <li class="navbar__menu--item"><a href="#" class="navbar__menu--link">Двойной брус</a></li>
-                <li class="navbar__menu--item"><a href="#" class="navbar__menu--link">Деревянные фермы</a></li>
-                <li class="navbar__menu--item"><a href="#" class="navbar__menu--link">Проектирование</a></li>
-                <li class="navbar__menu--item"><a href="#" class="navbar__menu--link">О компании</a></li>
-            </ul>
+            @@include('./_navbar-menu.html', {"prefix": "menu"})
         </div>
         <div class="navbar__btn">
             @@include('../../items/_button.html', {
@@ -26,9 +20,7 @@
                 "url": "#"
             })
         </div>
-        <div class="navbar__phone">
-            <a href="tel:+79102623232">+7 (910) <span>262-32-32</span></a>
-        </div>
+        @@include('./_navbar-phone.html', {"mobile": false})
         <div class="navbar__mobile--btn">
             <button class="hamburger hamburger--spring" type="button">
                 <span class="hamburger-box">
@@ -37,7 +29,10 @@
             </button>
         </div>
         <div class="navbar__mobile--container">
-            
+            <div class="navbar__mobile--menu">
+                @@include('./_navbar-menu.html', {"prefix": "mobile"})
+            </div>
+            @@include('./_navbar-phone.html', {"mobile": true})
         </div>
     </div>
 </div>

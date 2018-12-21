@@ -2,12 +2,15 @@
 @import "hamburgers/hamburgers.scss";
 
 @import "var";
+@import "mixins";
 @import "normalize";
 @import "base";
 @import "typography";
 @import "grid";
 @import "navbar";
 @import "buttons";
+
+@import "blocks/slider";
 
 // Большой слайдер на главной странице
 @import "slider";
