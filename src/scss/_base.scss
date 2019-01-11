@@ -11,3 +11,24 @@ a {
     text-decoration: none;
     color: $color_yellow;
 }
+
+.mb {
+    &-0 {
+        margin-bottom: 0 !important;
+    }
+    &-30 {
+        margin-bottom: 30px !important;
+    }
+}
+
+.pl {
+    &-30 {
+        padding-left: 30px;
+    }
+}
+
+.pr {
+    &-30 {
+        padding-right: 30px;
+    }
+}

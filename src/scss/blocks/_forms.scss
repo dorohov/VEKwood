@@ -88,6 +88,112 @@
             }
         }
     }
+    &_in {
+        &__inner {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &--left {
+            padding-top: 110px;
+            padding-bottom: 90px;
+            background: $color_grey;
+            width: 60%;
+            overflow: hidden;
+            padding-right: 15px;
+            padding-left: 15px;
+            &__header {
+                font-weight: 500;
+                color: #fff;
+                margin-bottom: 50px;
+            }
+            &__subheader {
+                color: $color_brown-light;
+                margin-bottom: 35px;
+            }
+            &__inner {
+                max-width: 730px;
+                width: 100%;
+                margin: 0 auto;
+                position: relative;
+
+                &::after {
+                    content: 'V';
+                    color: $color_brown-light;
+                    font-size: 100px;
+                    position: absolute;
+                    right: -140px;
+                    top: -160px;
+                    font-weight: 600;
+                    font-size: 500px;
+                    opacity: .05;
+                    z-index: 5;
+                }
+            }
+            &__container {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            &__block {
+                width: 50%;
+                margin-bottom: 35px;
+                &--ico {
+                    margin-bottom: 20px;
+                    img {
+                        height: 52px;
+                        vertical-align: top;
+                        width: auto;
+                    }
+                }
+                &--text {
+                    p {
+                        color: $color_brown-light;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        &--right {
+            background: #fff;
+            width: 40%;
+            padding-left: 15px;
+            padding-right: 15px;
+            &__inner {
+                max-width: 460px;
+                width: 100%;
+                margin: 0 auto;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                form {
+                    width: 100%;
+                    .form_b--block3 {
+                        width: 100%;
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+                }
+            }
+            &__form {
+                &--header {
+                    margin-bottom: 10px;
+                }
+                &--subheader {
+                    margin-bottom: 45px;
+                    p {
+                        margin: 0;
+                        color: $color_brown;
+                        font-size: 18px;
+                        line-height: 27px;
+                    }
+                }
+                &--push {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
 }
 
 input[type="file"] {
@@ -118,6 +224,41 @@ input[type="email"],
 input[type="submit"] {
     cursor: pointer;
     border: none;
+}
+
+.form_check {
+    display: flex;
+    align-items: center;
+    input {
+        display: none;
+        &:checked + .form_check_cub {
+            &::before {
+                width: 10px;
+                height: 10px;
+                background: $color_yellow;
+                content: '';
+                display: block;
+                position: absolute;
+                left: 2px;
+                top: 2px;
+            }
+        }
+    }
+    &_cub {
+        width: 16px;
+        height: 16px;
+        display: block;
+        border: 1px solid $color_brown-light;
+        cursor: pointer;
+        position: relative;
+        margin-right: 10px;
+    }
+    &_text {
+        font-size: 14px;
+        color: $color_brown;
+        line-height: 15px;
+        vertical-align: middle;
+    }
 }
 
 @media (max-width: $resp768) {

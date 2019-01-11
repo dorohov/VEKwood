@@ -458,10 +458,25 @@
         &-instruction {
             &__block {
                 flex-wrap: wrap;
+                width: 100%;
+                flex-flow: wrap;
                 &--text,
                 &--img {
                     padding: 0px !important;
                     width: 100%;
+                }
+                &--img {
+                    margin-bottom: 40px;
+                }
+                &.is--right {
+                    flex-flow: wrap;
+                    .in-instruction {
+                        &__block {
+                            &--text {
+                                order: 1;
+                            }
+                        }
+                    }
                 }
             }
         }

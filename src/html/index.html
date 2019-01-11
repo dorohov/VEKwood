@@ -9,13 +9,17 @@
         @@include('blocks/site/_slider.html')
     </header>
     <main>
-        @@include('blocks/site/_index-one.html')
-        @@include('blocks/site/_index-two.html')
-        @@include('blocks/site/_form_big.html')
+        @@include('blocks/site/index/_index-one.html')
+        @@include('blocks/site/index/_index-two.html')
+        @@include('forms/_form_big.html', {
+            "heading": "Отправить проект на бесплатный расчет",
+            "sub_heading": "Оставьте заявку и мы подберем готовый проект дома, исходя из ваших потребностей Наш специалист свяжется с вами в течении часа"
+        })
         <!-- Рука -->
         @@include('blocks/site/_vslide.html')
         @@include('blocks/site/_materials.html')
-        @@include('blocks/site/_index-instruction.html')
+        @@include('blocks/site/index/_index-instruction.html')
+        @@include('forms/_form_index.html')
     </main>
     @@include('blocks/_scripts.html')
 </body>
