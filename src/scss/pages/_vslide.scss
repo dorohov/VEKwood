@@ -1,0 +1,120 @@
+.vslide {
+    @extend .slide;
+    background: #393D3F;
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @extend .container;
+    }
+    &__left,
+    &__right {
+        max-width: 407px;
+        width: 100%;
+    }
+    &__right {
+        .vslide__item--header {
+            span {
+                &::after {
+                    left: auto;
+                    right: 0;
+                }
+            }
+        }
+        .vslide__item {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__center {
+        max-width: 727px;
+        width: 100%;
+        vertical-align: top;
+    }
+    &__left {
+        text-align: right;
+    }
+    &__item {
+        margin-bottom: 50px;
+        &--header {
+            color: $color_brown-light;
+            font-weight: 500;
+            font-size: 24px;
+            padding-bottom: 14px;
+            margin-bottom: 15px;
+            span {
+                position: relative;
+                &::after {
+                    content: '';
+                    width: 510px;
+                    height: 1px;
+                    background: rgba($color_brown, .5);
+                    position: absolute;
+                    bottom: -14px;
+                    left: 0;
+                }
+            }
+        }
+        &--text {
+            color: $color_brown;
+            line-height: 18px;
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 1850px) {
+    .vslide {
+        &__item {
+            &--header {
+                span {
+                    &::after {
+                        width: 350px;
+                    }
+                }
+            }
+        }
+        &__inner {
+            flex-wrap: nowrap;
+        }
+    }
+}
+
+@media (max-width: $resp1400) {
+    .vslide {
+        &__item {
+            &--header {
+                span {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+        &__center {
+            display: none;
+        }
+        &__left,
+        &__right {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: $resp768) {
+    .vslide {
+        &__inner {
+            display: block;
+        }
+        &__left,
+        &__right {
+            margin: 0 auto;
+        }
+        &__item {
+            &--header {
+                padding-bottom: 0;
+            }
+        }
+    }
+}

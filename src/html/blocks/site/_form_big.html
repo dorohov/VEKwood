@@ -1,0 +1,36 @@
+<div class="form_b">
+    @@include('../../items/_heading.html', {
+        "align": "center",
+        "color": "black",
+        "sub": true,
+        "sub_color": "dark",
+        "sub_text": "Оставьте заявку и мы подберем готовый проект дома, исходя из ваших потребностей Наш специалист свяжется с вами в течении часа",
+        "text": "Отправить проект на бесплатный расчет"
+    })
+    <div class="form_b__inner">
+        <form action="/">
+            <div class="form_b--block3 form_b--block_name">
+                <input type="text" placeholder="Имя">
+            </div>
+            <div class="form_b--block3 form_b--block_phone">
+                <input type="text" placeholder="Телефон">
+            </div>
+            <div class="form_b--block3 form_b--block_email">
+                <input type="text" placeholder="E-mail">
+            </div>
+            <div class="form_b--block1 form_b--block_comment">
+                <input type="text" placeholder="Комментарий">
+            </div>
+            <div class="form_b--block1 form_b--block_file">
+                <label for="file" class="label-input">Прикрепить файл</label>
+                <input type="file" name="file" id="file">
+            </div>
+            <div class="form_b--block1 form_b--block_submit">
+                <input type="submit" value="Отправить" class="button is--classic">
+            </div>
+            <div class="form_b--blockurl">
+                <p>Нажимая на кнопку “Отправить” вы соглашаетесь с правилами <a href="#">обработки персональных данных</a></p>
+            </div>
+        </form>
+    </div>
+</div>

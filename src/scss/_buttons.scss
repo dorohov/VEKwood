@@ -37,3 +37,12 @@
         }
     }
 }
+
+@media (max-width: $resp768) {
+    .button {
+        &.is--classic {
+            padding: 10px 20px;
+            font-size: 14px;
+        }
+    }
+}

@@ -9,8 +9,11 @@
 @import "grid";
 @import "navbar";
 @import "buttons";
+@import "heading";
 
 @import "blocks/slider";
+@import "blocks/forms";
+@import "blocks/materials";
 
-// Большой слайдер на главной странице
-@import "slider";
+@import "pages/index";
+@import "pages/vslide";

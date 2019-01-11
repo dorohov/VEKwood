@@ -2,7 +2,7 @@
     height: $navbar_height;
     transition: .25s all ease;
     @include headerBg();
-    z-index: 100;
+    z-index: 110;
     &.is--opacity {
         background: transparent;
         position: absolute;
