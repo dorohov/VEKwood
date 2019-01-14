@@ -192,6 +192,9 @@
                     justify-content: space-between;
                 }
             }
+            .form_b--block1::after, .form_b--block3::after {
+                left: 18px;
+            }
         }
     }
 }
@@ -261,11 +264,39 @@ input[type="submit"] {
     }
 }
 
-@media (max-width: $resp768) {
-    .form_b {
-        &--block {
-            &3 {
+@media (max-width: $resp1025) {
+    .form {
+        &_in {
+            &__inner {
+                display: block;
+            }
+            &--left {
                 width: 100%;
+                padding-top: 50px;
+            }
+            &--right {
+                padding-top: 50px;
+                padding-bottom: 50px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: $resp768) {
+    .form {
+        &_b {
+            &--block {
+                &3 {
+                    width: 100%;
+                }
+            }
+        }
+        &_in {
+            &--left {
+                &__header {
+                    font-size: 32px;
+                }
             }
         }
     }

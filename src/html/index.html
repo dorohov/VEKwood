@@ -20,7 +20,17 @@
         @@include('blocks/site/_materials.html')
         @@include('blocks/site/index/_index-instruction.html')
         @@include('forms/_form_index.html')
+        @@include('blocks/site/index/_index-video.html', {
+            "header_align": "center",
+            "bg_type": "empty"
+        })
+        @@include('blocks/site/_more-video.html', {
+            "title": "Больше видео о нас",
+            "btn_text": "Смотреть",
+            "btn_uri": "#"
+        })
     </main>
+    @@include('blocks/_footer.html')
     @@include('blocks/_scripts.html')
 </body>
 </html>

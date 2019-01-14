@@ -6,6 +6,7 @@
         margin: 0;
     }
     &__item {
+        display: none;
         &__inner {
             height: 100vh;
             background: #202020;
@@ -60,6 +61,11 @@
                 display: block;
                 font-weight: 600;
             }
+        }
+        &__subheader {
+            font-size: 30px;
+            color: #fff;
+            padding: 35px 0 50px 0;
         }
         &__bg {
             display: flex;
@@ -211,6 +217,10 @@
             &__header {
                 font-size: 26px;
                 line-height: 28px;
+            }
+            &__subheader {
+                font-size: 18px;
+                padding: 20px 0;
             }
             &__inner,
             &__bl,

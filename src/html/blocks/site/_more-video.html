@@ -1,0 +1,14 @@
+<div class="morevideo">
+    <div class="morevideo__inner">
+        <div class="morevideo__block">
+            @@if(title) {
+                <h3>@@title</h3>
+            }
+            @@include('../../items/_button.html', {
+                "url": "@@uri",
+                "type": "classic",
+                "text": "@@btn_text"
+            })
+        </div>
+    </div>
+</div>

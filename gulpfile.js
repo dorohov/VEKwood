@@ -11,6 +11,8 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync').create(), // Автообновление браузера
     plumber = require('gulp-plumber'),              // 
     concat = require('gulp-concat'),
+    uglify = require('gulp-uglify'),                
+    rename = require('gulp-rename'),
     sourcemaps = require('gulp-sourcemaps');
     // fontgen = require('gulp-fontgen');
 
@@ -19,7 +21,7 @@ var gulp = require('gulp'),
         svg:        'src/svg/*.svg',
         images:     'src/images/*',
         html:       'src/html/*.html',
-        js:         'src/js/*.js',
+        js:         'src/js/**/*.js',
         fonst:      'src/fonts/*.{ttf, otf}'
     }
 
@@ -31,7 +33,9 @@ var gulp = require('gulp'),
 function css() {
     return gulp.src(assets.sass)
             .pipe(plumber())
-            .pipe(sass())
+            .pipe(sass().on('error', function(error) {
+                console.log(error)
+            }))
             .pipe(minifyCSS())
             .pipe(autoprefixer({browsers: ['> 2% in RU', 'last 4 version', 'ie 9', 'opera 12.1', 'ios 6', 'android 4']}))
             .pipe(gulp.dest('dist/css'))
@@ -73,6 +77,10 @@ function js() {
                 .pipe(concat('main.js'))
                 .pipe(sourcemaps.write())
                 .pipe(gulp.dest('dist/js'))
+                // .pipe(uglify())
+                // .pipe(rename({suffix: '.min'}))
+                // .pipe(gulp.dest('dist/js'))
+                // .pipe(clean({force: true}))
                 .on('end', browserSync.reload)
 }
 

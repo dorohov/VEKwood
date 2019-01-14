@@ -1,0 +1,102 @@
+.footer {
+    background: $color_dark;
+    &__inner {
+        @extend .container;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__soc {
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            li {
+                margin-right: 20px;
+                a {
+                    img {
+                        height: 18px;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+    }
+    &__menu {
+        nav {
+            ul {
+                display: flex;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                li {
+                    padding: 0 5px;
+                    a {
+                        padding: 10px 20px;
+                        display: block;
+                        font-size: 16px;
+                        color: $color_brown;
+                        transition: .25s all ease;
+                        &:hover {
+                            color: $color_brown-light;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__phone {
+        a {
+            color: $color_brown;
+            letter-spacing: .1em;
+            font-size: 16px;
+            transition: .25s all ease;
+            span {
+                font-weight: bold;
+            }
+            &:hover {
+                color: $color_brown-light;
+            }
+        }
+    }
+    &__dorohov {
+        a {
+            display: flex;
+            align-items: center;
+        }
+        &--text {
+            font-size: 14px;
+            color: $color_brown; 
+            margin-right: 6px;
+        }
+        &--img {
+            img {
+                height: 28.6px;
+                width: 100.5px;
+            }
+        }
+    }
+}
+
+@media (max-width: $resp1400) {
+    .footer {
+        &__dorohov {
+            &--text {
+                display: none;
+            }
+        }
+        &__phone {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: $resp1025) {
+    .footer {
+        &__menu {
+            display: none;
+        }
+    }
+}

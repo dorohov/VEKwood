@@ -1,0 +1,32 @@
+<li class="slider__item" data-slider-item-id="@@id">
+    <div class="slider__item__inner">
+        <div class="slider__item__elements">
+            <div class="slider__item__info">
+                <div class="slider__item__header">
+                    @@header
+                </div>
+                @@if(subheader) {
+                    <div class="slider__item__subheader">
+                        @@subheader_text
+                    </div>
+                }
+                @@if(price) {
+                    <div class="slider__item__price">@@price_num</div>
+                }
+                <div class="slider__item__btn">
+                    @@if(button) {
+                        @@include('_button.html', {
+                            "type": "classic", 
+                            "text": "@@button_text", 
+                            "url": "@@button_url"
+                        })
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="slider__item__bg">
+            <div class="slider__item__bl"></div>
+            <div class="slider__item__img" style="background-image: url(@@image)"></div>
+        </div>
+    </div>
+</li>

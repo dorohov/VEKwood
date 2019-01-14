@@ -1,35 +1,47 @@
 <div class="slider">
     <ul class="slider__inner">
-        <li class="slider__item">
-            <div class="slider__item__inner">
-                <div class="slider__item__elements">
-                    <div class="slider__item__info">
-                        <div class="slider__item__header">
-                            Каркасный домокомплект
-                            <span>Айсберг 130 м2</span>
-                        </div>
-                        <div class="slider__item__price">470 000</div>
-                        <div class="slider__item__btn">
-                            @@include('../../items/_button.html', {
-                                "type": "classic", 
-                                "text": "Подробнее", 
-                                "url": "#"
-                            })
-                        </div>
-                    </div>
-                </div>
-                <div class="slider__item__bg">
-                    <div class="slider__item__bl"></div>
-                    <div class="slider__item__img" style="background-image: url(img/slide1.jpg)"></div>
-                </div>
-            </div>
-        </li>
+        @@include('../../items/_slider-item.html', {
+            "id": 1,
+            "header": "Каркасный домокомплект <span>Айсберг 130 м2</span>",
+            "subheader": false,
+            "subheader_text": " ",
+            "price": true,
+            "price_num": "470 000",
+            "button": true,
+            "button_url": "#",
+            "button_text": "Подробнее",
+            "image": "img/slide1.jpg"
+        })
+        @@include('../../items/_slider-item.html', {
+            "id": 2,
+            "header": "Деревянные фермы с завода стропильных конструкций",
+            "subheader": true,
+            "subheader_text": "Крыши и мансарды любой сложности с применением МЗП MiTek",
+            "price": false,
+            "price_num": " ",
+            "button": true,
+            "button_url": "#",
+            "button_text": "Подробнее",
+            "image": "img/slide2.jpg"
+        })
+        @@include('../../items/_slider-item.html', {
+            "id": 3,
+            "header": "Каркасный домокомплект <span>Айсберг 130 м2</span>",
+            "subheader": false,
+            "subheader_text": " ",
+            "price": true,
+            "price_num": "470 000",
+            "button": true,
+            "button_url": "#",
+            "button_text": "Подробнее",
+            "image": "img/slide1.jpg"
+        })
     </ul>
     <div class="slider__nav">
         <ul>
-            <li><a href="#">01</a></li>
-            <li class="is--active"><a href="#">02</a></li>
-            <li><a href="#">03</a></li>
+            <li data-slider-item-id="1" class="slider__nav--btn"><a href="#">01</a></li>
+            <li data-slider-item-id="2" class="slider__nav--btn is--active"><a href="#">02</a></li>
+            <li data-slider-item-id="3" class="slider__nav--btn"><a href="#">03</a></li>
         </ul>
     </div>
     <div class="slider__down">
