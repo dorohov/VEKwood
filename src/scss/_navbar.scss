@@ -3,6 +3,7 @@
     transition: .25s all ease;
     @include headerBg();
     z-index: 110;
+    width: 100%;
     &.is--opacity {
         background: transparent;
         position: absolute;

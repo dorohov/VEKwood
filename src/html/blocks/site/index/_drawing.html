@@ -1,0 +1,30 @@
+<div class="drawing">
+    @@include('../../../items/_heading.html', {
+        "sub": false,
+        "text": "Вы мечтаете - мы проектируем",
+        "color": "white",
+        "align": "center"
+    })
+    <div class="drawing__inner">
+        <div class="drawing__left">
+            <div class="drawing__left__inner">
+                <h5>Есть представления об идеальном доме?</h5>
+                <p>Отлично! Мы очень любим проектировать, поэтому наши архитекторы, конструкторы и экономисты приложат все силы для воплощения вашей мечты в жизнь.</p>
+                <h6>Индивидуальное проектирование</h6>
+                @@include('../../../items/_button.html', {
+                    "type": "classic",
+                    "text": "Заказать",
+                    "url": "#"
+                })
+            </div>
+        </div>
+        <div class="drawing__right">
+            <div class="drawing__home">
+                <div class="drawing__hand">
+                    <img src="img/hand.png" alt="">
+                </div>
+                @@include('../../../items/_home.html')
+            </div>
+        </div>
+    </div>
+</div>

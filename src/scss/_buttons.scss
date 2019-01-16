@@ -11,6 +11,9 @@
         border: 2px solid $button_bordered_color;
         color: $button_bordered_color_txt;
         background: transparent;
+        &.is--lg {
+            padding: 15px 70px 15px 70px;
+        }
         &:hover {
             border-color: $button_bordered_color_h;
             background: $button_bordered_color_h;

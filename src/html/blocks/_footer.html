@@ -1,11 +1,7 @@
 <footer class="footer">
     <div class="footer__inner">
         <div class="footer__soc">
-            <ul>
-                <li><a href="#"><img src="img/svg/sprites.svg#youtube" alt=""></a></li>
-                <li><a href="#"><img src="img/svg/sprites.svg#vk" alt=""></a></li>
-                <li><a href="#"><img src="img/svg/sprites.svg#instagram" alt=""></a></li>
-            </ul>
+            @@include('../items/_social.html')
         </div>
         <div class="footer__menu">
             <nav>
@@ -23,7 +19,7 @@
             <a href="http://dorohovdesign.ru/" target="_blank">
                 <div class="footer__dorohov--text">Создание сайта -</div>
                 <div class="footer__dorohov--img">
-                    <img src="img/svg/dorohov.svg" alt="">
+                    @@include('../items/_svg.html', {"name": "dorohov"})
                 </div>
             </a>
         </div>

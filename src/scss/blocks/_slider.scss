@@ -189,11 +189,11 @@
                     display: none;
                 }
             }
-            &__inner,
-            &__bl,
-            &__img {
-                height: 50vh;
-            }
+            // &__inner,
+            // &__bl,
+            // &__img {
+            //     height: 50vh;
+            // }
             &__header {
                 font-size: 34px;
                 line-height: 36px;
@@ -225,7 +225,7 @@
             &__inner,
             &__bl,
             &__img {
-                height: 50vh;
+                height: 100vh;
             }
         }
         &__soc {

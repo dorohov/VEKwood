@@ -2,6 +2,7 @@
     height: 400px;
     background: url(../../img/more_video_bg.jpg);
     background-size: cover;
+    animation: background1 100s infinite alternate;
     &__inner {
         @extend .container;
         text-align: center;
@@ -38,5 +39,14 @@
                 margin-bottom: 20px;
             }
         }
+    }
+}
+
+@keyframes background1 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 5000px;
     }
 }

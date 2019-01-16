@@ -1,6 +1,7 @@
 @import "../../fonts/stylesheet.css";
 @import "hamburgers/hamburgers.scss";
 
+@import "../../img/svg/sprite.scss";
 @import "var";
 @import "mixins";
 @import "normalize";
@@ -11,11 +12,16 @@
 @import "buttons";
 @import "heading";
 @import "footer";
+@import "planning";
+@import "drawing";
 
 @import "blocks/slider";
 @import "blocks/forms";
 @import "blocks/materials";
+@import "blocks/breadcrumbs";
 
 @import "pages/index";
 @import "pages/vslide";
 @import "pages/more_video";
+
+// Включить видео

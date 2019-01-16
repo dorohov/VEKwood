@@ -1,0 +1,152 @@
+.drawing {
+    position: relative;
+    background: $color_dark;
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__left,
+    &__right {
+        width: 50%;
+        padding: 0 15px;
+    }
+    &__left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &__inner {
+            max-width: 550px;
+            width: 100%;
+        }
+        h5 {
+            color: #fff;
+            margin-bottom: 15px;
+        }
+        p {
+            line-height: 27px;
+            font-size: 18px;
+            color: $color_brown;
+            margin: 0 0 55px 0;
+        }
+        h6 {
+            color: $color_brown-light;
+            margin-bottom: 30px;
+        }
+    }
+    &__right {
+        height: 960px;
+        background: url('../../img/drawing_bg.jpg');
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .heading {
+        position: absolute;
+        max-width: 100%;
+        top: 120px;
+    }
+    &__hand {
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 1000px;
+            -moz-animation-name: stylie-transform-keyframes;
+            -moz-animation-duration: 7500ms;
+            -moz-animation-delay: 0ms;
+            -moz-animation-fill-mode: forwards;
+            -moz-animation-timing-function: linear;
+            -moz-animation-iteration-count: infinite;
+            -moz-transform-origin: 0 0;
+            -ms-animation-name: stylie-transform-keyframes;
+            -ms-animation-duration: 7500ms;
+            -ms-animation-delay: 0ms;
+            -ms-animation-fill-mode: forwards;
+            -ms-animation-timing-function: linear;
+            -ms-animation-iteration-count: infinite;
+            -ms-transform-origin: 0 0;
+            -o-animation-name: stylie-transform-keyframes;
+            -o-animation-duration: 7500ms;
+            -o-animation-delay: 0ms;
+            -o-animation-fill-mode: forwards;
+            -o-animation-timing-function: linear;
+            -o-animation-iteration-count: infinite;
+            -o-transform-origin: 0 0;
+            -webkit-animation-name: stylie-transform-keyframes;
+            -webkit-animation-duration: 7500ms;
+            -webkit-animation-delay: 0ms;
+            -webkit-animation-fill-mode: forwards;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-transform-origin: 0 0;
+            animation-name: stylie-transform-keyframes;
+            animation-duration: 5000ms;
+            animation-delay: 0ms;
+            animation-fill-mode: alternate;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            transform-origin: 0 0;
+        }
+    }
+    &__home {
+        max-width: 500px;
+        width: 100%;
+        position: relative;
+    }
+}
+
+@keyframes stylie-transform-keyframes {
+    0% {transform:translate(804px, 592px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);animation-timing-function: cubic-bezier(.25,.25,.75,.75);}
+    12.50% {transform:translate(649px, 595px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(-6deg) translate(-50%, -50%);animation-timing-function: cubic-bezier(.25,.25,.75,.75);}
+    25% {transform:translate(508px, 479px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(-6deg) translate(-50%, -50%);animation-timing-function: cubic-bezier(.25,.25,.75,.75);}
+    37.50% {transform:translate(809px, 519px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(-6deg) translate(-50%, -50%);animation-timing-function: cubic-bezier(.25,.25,.75,.75);}
+    50% {transform:translate(747px, 314px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(-6deg) translate(-50%, -50%);animation-timing-function: cubic-bezier(.25,.25,.75,.75);}
+    62.25% {transform:translate(489px, 314px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(-6deg) translate(-50%, -50%);animation-timing-function: cubic-bezier(.25,.25,.75,.75);}
+    75% {transform:translate(701px, 297px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(-6deg) translate(-50%, -50%);animation-timing-function: cubic-bezier(.25,.25,.75,.75);}
+    87.50% {transform:translate(495px, 409px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(-6deg) translate(-50%, -50%);animation-timing-function: cubic-bezier(.25,.25,.75,.75);}
+    100% {transform:translate(718px, 414px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(-6deg) translate(-50%, -50%);}
+  }
+
+@media (max-width: $resp1025) {
+    .drawing {
+        &__hand {
+            img {
+                left: -200px;
+                top: -150px;
+                width: 700px;
+            }
+        }
+    }
+}
+
+@media (max-width: $resp768) {
+    .drawing {
+        &__hand {
+            display: none;
+        }
+        &__inner {
+            flex-wrap: wrap;
+        }
+        &__left,
+        &__right {
+            width: 100%;
+            height: auto;
+            padding: 50px 15px;
+        }
+        &__left {
+            padding-top: 0;
+            &__inner {
+                p {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .heading {
+            position: static;
+            padding-top: 60px;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+<div class="planning-tw__item is--@@align is--id@@id">
+    <div class="planning-tw__item__img">
+        <img src="@@img" alt="">
+    </div>
+    <div class="planning-tw__item__info">
+        <div class="planning-tw__item__title">@@title_one</div>
+        <p>@@text_one</p>
+        @@if(list) {
+            <div class="planning-tw__item__title">Примерный чек-лист для обсуждения  при составлении технического задания:</div>
+            <div class="planning-tw__item__list">
+                <ul>
+                    <li>Площадь дома;</li>
+                    <li>Количество членов семьи;</li>
+                    <li>Какие дома нравятся;</li>
+                    <li>Какие помещения будут;</li>
+                </ul>
+                <ul>
+                    <li>Габариты и высоты участка строительства;</li>
+                    <li>Тип почвы на участке строительства;</li>
+                    <li>Окружающий ландшафт;</li>
+                    <li>Ориентация участка строительства по сторонам света;</li>
+                </ul>
+            </div>
+        }
+        @@if(title_two) {<div class="planning-tw__item__title">@@title_two</div>}
+        @@if(text_two) {<p>@@text_two</p>}
+        <div class="planning-tw__item__footer">
+            <div class="planning-tw__item__footer__elem is--stopwatch">
+                @@days
+            </div>
+            <div class="planning-tw__item__footer__elem is--coins">
+                @@money
+            </div>
+        </div>
+    </div> 
+</div>

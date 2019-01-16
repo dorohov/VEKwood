@@ -8,25 +8,25 @@
         "text": "@@heading"
     })
     <div class="form_b__inner">
-        <form action="/">
+        <form action="/" id="b_form" data-parsley-validate="">
             <div class="form_b--block3 form_b--block_name">
-                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="Имя" minlength="3" name="b_name" id="b_name" required data-parsley-no-focus>
             </div>
             <div class="form_b--block3 form_b--block_phone">
-                <input type="text" placeholder="Телефон">
+                <input type="text" placeholder="Телефон" minlength="11" name="b_phone" id="b_phone" required data-parsley-no-focus>
             </div>
             <div class="form_b--block3 form_b--block_email">
-                <input type="text" placeholder="E-mail">
+                <input type="email" placeholder="E-mail" data-validation="email" name="b_email" id="b_email" data-parsley-no-focus>
             </div>
             <div class="form_b--block1 form_b--block_comment">
-                <input type="text" placeholder="Комментарий">
+                <input type="text" placeholder="Комментарий" name="b_comment" id="b_comment" data-parsley-no-focus>
             </div>
             <div class="form_b--block1 form_b--block_file">
-                <label for="file" class="label-input">Прикрепить файл</label>
-                <input type="file" name="file" id="file">
+                <label for="b_file" class="label-input">Прикрепить файл</label>
+                <input type="file" name="b_file" id="b_file" required>
             </div>
             <div class="form_b--block1 form_b--block_submit">
-                <input type="submit" value="Отправить" class="button is--classic">
+                <input type="submit" value="Отправить" class="button is--classic" data-parsley-no-focus>
             </div>
             <div class="form_b--blockurl">
                 <p>Нажимая на кнопку “Отправить” вы соглашаетесь с правилами <a href="#">обработки персональных данных</a></p>

@@ -47,7 +47,7 @@ function css() {
 */
 function svgMap() {
     return gulp.src(assets.svg)
-            .pipe(svgSprite({mode: {stack: {dest: '', sprite: 'sprites.svg', example: true}}}))
+            .pipe(svgSprite({mode: {stack: {dest: '', sprite: 'sprites.svg', example: true, render: {scss: true}}}}))
             .pipe(gulp.dest('img/svg'))
 }
 
