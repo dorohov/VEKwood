@@ -32,3 +32,9 @@
         }
     }   
 }
+
+@media (max-width: $resp1025) {
+    .breadcrumbs {
+        margin-bottom: 10px;
+    }
+}

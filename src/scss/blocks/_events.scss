@@ -1,0 +1,72 @@
+.events {
+    padding-left: 65px;
+    padding-right: 65px;
+    &__list {
+        @extend .container;
+        max-width: calc(#{$grid_width} + 30px + 50px + 40px);
+        padding: 0;
+    }
+    &__item {
+        margin: 15px;
+        &__inner {
+            display: block;
+            position: relative;
+        }
+        &__text {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 40px 45px;
+            font-size: 30px;
+            font-weight: bold;
+            color: #fff;
+        }
+    }
+    &__controll {
+        position: absolute;
+    }
+}
+
+.slick-arrow {
+    width: 45px;
+    height: 60px;
+    background: url(../../img/svg/sprites.svg#slider_arrow);
+    padding: 0;
+    border: none;
+    background-repeat: no-repeat;
+    color: transparent;
+    overflow: hidden;
+    cursor: pointer;
+    background-position: center;
+    position: absolute;
+    outline: none;
+    &.slick-prev {
+        left: -50px;
+        top: 50%;
+        margin-top: -30px;
+        transform: rotate(180deg);
+    }
+    &.slick-next {
+        right: -50px;
+        top: 50%;
+        margin-top: -30px;
+    }
+}
+
+@media (max-width: $resp1400) {
+    .events {
+        &__item {
+            &__text {
+                font-size: 22px;
+                padding: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: $resp768) {
+    .events {
+        padding: 0 !important;       
+    }
+}

@@ -21,5 +21,9 @@
                 $('.slider__item[data-slider-item-id="' + itemActiveId + '"]').fadeIn()
             }
         }
+
+        $('.slider__down').click(function() {
+            $('html, body').animate({scrollTop: $('.slider').outerHeight()}, 800)
+        });
     })
 })(jQuery);

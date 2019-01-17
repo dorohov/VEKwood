@@ -59,3 +59,31 @@ img {
         }
     }
 }
+
+main {
+    &.is--bordered {
+        position: relative;
+        &::after {
+            content: '';
+            width: 100%;
+            max-width: $grid_width;
+            height: 1px;
+            background: $color_brown;
+            position: absolute;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
+
+@media (max-width: $resp1400) {
+    main {
+        &.is--bordered {
+            &::after {
+                width: 85%;
+            }
+        }
+    }
+}

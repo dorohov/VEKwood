@@ -1,0 +1,121 @@
+.people {
+    @extend .slide;
+    background: $color-dark;
+    overflow: hidden;
+    &__inner {
+        @extend .container;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        position: relative;
+        &::before {
+            content: 'V';
+            color: $color_brown-light;
+            position: absolute;
+            right: 0px;
+            top: -340px;
+            font-weight: 600;
+            font-size: 500px;
+            opacity: .05;
+            z-index: 0;
+        }
+        &::after {
+            content: 'W';
+            color: $color_brown-light;
+            position: absolute;
+            left: 0px;
+            bottom: -150px;
+            font-weight: 600;
+            font-size: 500px;
+            opacity: .05;
+            z-index: 0;
+        }
+    }
+    &__line {
+        &.is--center {
+            padding: 0 80px;
+        }
+    }
+    &__card {
+        max-width: 420px;
+        width: 100%;
+        margin-bottom: 70px;
+        position: relative;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &__img {
+            width: 100%;
+        }
+        &__info {
+            position: absolute;
+            width: 100%;
+            padding: 35px 30px;
+            left: 0;
+            bottom: 0;
+        }
+        &__name {
+            font-size: 30px;
+            color: #fff;
+            font-weight: bold;
+        }
+        &__position {
+            font-size: 18px;
+            color: $color_brown-light;
+        }
+    }
+}
+
+.about {
+    &__events {
+        @extend .slide;
+        background: $color-dark;
+    }
+}
+
+@media (max-width: $resp1400) {
+    .people {
+        &__line {
+            &.is--center {
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+        }
+        &__card {
+            margin-bottom: 40px;
+            &__info {
+                padding: 20px 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: $resp1025) {
+    .people {
+        &__inner {
+            display: block;
+        }
+        &__card {
+            margin: 0 auto 40px auto !important;
+        }
+        &__line {
+            &.is--center {
+                padding-left: 0;
+                padding-right: 0;
+            }
+            &:last-child {
+                .people__card {
+                    &:last-child {
+                        margin-bottom: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $resp768) {
+    .people {
+        padding-top: 0;
+    }
+}

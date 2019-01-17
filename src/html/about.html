@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    @@include('blocks/_head.html', {"title": "О компании"})
+</head>
+<body>
+    <header>
+        @@include('blocks/main/_navbar.html', {"opacity": false})
+    </header>
+    <main class="is--bordered">
+        @@include('blocks/site/planning/_planning-one.html', {
+            "img": "img/about_top.jpg",
+            "title": "О компании",
+            "text": "Компания HONKA была основана в 1958 году как семейное предприятие. Сейчас — это международный концерн, работающий в 30 странах, а дома HONKA поставляются более чем в 50 стран мира. Компания первой из западных производителей деревянных домов пришла в Россию. С 1995 года ООО «Росса Ракенне СПб» — эксклюзивный дистрибьютор концерна и единственная компания, которая предоставляет действительно полный комплекс строительных услуг и сервиса в своем сегменте. Головной офис располагается в Санкт-Петербурге, представительства успешно работают в Москве, Перми, Казани, Новосибирске, Минске и Алматы.",
+            "btn_text": "Подробнее",
+            "btn_uri": "#",
+            "breadcrumb": "О компании",
+            "title_content": "ЗДК - инноватор в своей отрасли"
+        })
+        @@include('blocks/site/about/_people.html')
+        <div class="about__events">
+            @@include('items/_heading.html', {
+                "text": "События",
+                "sub": false,
+                "align": "left",
+                "color": "white"
+            })
+            <div class="about__events__inner">
+                @@include('blocks/site/_events.html')
+            </div>
+        </div>
+    </main>
+
+    @@include('blocks/_footer.html')
+    @@include('blocks/_scripts.html')
+</body>
+</html>

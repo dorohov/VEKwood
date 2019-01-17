@@ -1,5 +1,5 @@
 <div class="planning-on">
-    @@include('../../../items/_breadcrumbs.html', {"title": "Проектирование"})
+    @@include('../../../items/_breadcrumbs.html', {"title": "@@breadcrumb"})
     @@include('../../../items/_heading.html', {
         "text": "@@title",
         "sub": false,
@@ -14,6 +14,9 @@
         </div>
         <div class="planning-on__content">
             <div class="planning-on__content__inner">
+                @@if(title_content) {
+                    <div class="planning-on__content__title">@@title_content</div>
+                }
                 <p>@@text</p>
                 <div class="planning-on__content__btn">
                     @@include('../../../items/_button.html', {

@@ -13,6 +13,7 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),                
     rename = require('gulp-rename'),
+    notify = require("gulp-notify"),
     sourcemaps = require('gulp-sourcemaps');
     // fontgen = require('gulp-fontgen');
 
@@ -32,7 +33,7 @@ var gulp = require('gulp'),
 */
 function css() {
     return gulp.src(assets.sass)
-            .pipe(plumber())
+            .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
             .pipe(sass().on('error', function(error) {
                 console.log(error)
             }))
