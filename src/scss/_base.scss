@@ -76,6 +76,10 @@ main {
             bottom: 0;
         }
     }
+    &.is--contacts {
+        min-height: calc(100vh - 200px);
+        height: 100%;
+    }
 }
 
 @media (max-width: $resp1400) {

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    @@include('blocks/_head.html', {"title": "Наши работы"})
+</head>
+<body>
+    <header>
+        @@include('blocks/main/_navbar.html', {"opacity": false})
+    </header>
+    <main class="is--contacts">
+        <div class="contacts">
+            <div class="contacts__inner">
+                <div class="contacts__map">
+                    @@include('blocks/site/_map.html')
+                </div>
+                <div class="contacts__form">
+                    @@include('forms/_form_contacts.html')
+                </div>
+            </div>
+        </div>
+    </main>
+
+    @@include('blocks/_footer.html')
+    @@include('blocks/_scripts.html')
+</body>
+</html>

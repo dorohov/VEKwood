@@ -1,0 +1,37 @@
+<div class="work-in">
+    @@include('../../../items/_breadcrumbs.html', {"title": "Наши работы"})
+    @@include('../../../items/_heading.html', {
+        "text": "Наши работы",
+        "sub": false,
+        "align": "left",
+        "color": "white"
+    })
+    <div class="work-in__inner">
+        <div class="work-in__item">
+            <div class="work-in__item__inner" style="background-image: url('img/work-in1.jpg')"></div>
+            <div class="work-in__item__content">
+                <div class="work-in__item__title">Типовые проекты</div>
+                <div class="work-in__item__btn">
+                    @@include('../../../items/_button.html', {
+                        "type": "classic is--sm",
+                        "url": "#",
+                        "text": "Подробнее"
+                    })
+                </div>
+            </div>
+        </div>
+        <div class="work-in__item">
+            <div class="work-in__item__inner"  style="background-image: url('img/work-in2.jpg')"></div>
+            <div class="work-in__item__content">
+                    <div class="work-in__item__title">Индивидуальные проекты</div>
+                    <div class="work-in__item__btn">
+                        @@include('../../../items/_button.html', {
+                            "type": "classic is--sm",
+                            "url": "#",
+                            "text": "Подробнее"
+                        })
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>

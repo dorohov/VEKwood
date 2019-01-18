@@ -1,34 +1,11 @@
 <div class="events">
     <div class="events__list">
-        @@include('../../items/_event-item.html', {
-            "uri": "#",
-            "img": "img/about_event1.jpg",
-            "text": "Cовременные деревянные дома Wekvood"
-        })
-        @@include('../../items/_event-item.html', {
-            "uri": "#",
-            "img": "img/about_event2.jpg",
-            "text": "Каталог домов Wekvood"
-        })
-        @@include('../../items/_event-item.html', {
-            "uri": "#",
-            "img": "img/about_event3.jpg",
-            "text": "Специальное предложение 2018 года"
-        })
-        @@include('../../items/_event-item.html', {
-            "uri": "#",
-            "img": "img/about_event1.jpg",
-            "text": "Cовременные деревянные дома Wekvood"
-        })
-        @@include('../../items/_event-item.html', {
-            "uri": "#",
-            "img": "img/about_event2.jpg",
-            "text": "Каталог домов Wekvood"
-        })
-        @@include('../../items/_event-item.html', {
-            "uri": "#",
-            "img": "img/about_event3.jpg",
-            "text": "Специальное предложение 2018 года"
-        })
+        @@for(var i = 0; i < items.length; i++) {
+            @@include('../../items/_event-item.html', {
+                "uri": "`+items[i].uri+`",
+                "img": "`+items[i].img+`",
+                "text": "`+items[i].text+`"
+            })
+        }
     </div>
 </div>
