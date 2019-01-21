@@ -1,15 +1,8 @@
 $('form').parsley();
 
-if(document.getElementById('b_phone')) {
+if(document.getElementsByClassName('phone--musk')[0]) {
     var bigFormPhoneMask = new IMask(
-    document.getElementById('b_phone'), {
-        mask: '+{7}(000)000-00-00'
-    });
-}
-
-if(document.getElementById('in_phone')) {
-    var indexFormPhoneMask = new IMask(
-    document.getElementById('in_phone'), {
-        mask: '+{7}(000)000-00-00'
+        document.getElementsByClassName('phone--musk')[0], {
+        mask: '+{7}(900)000-00-00'
     });
 }

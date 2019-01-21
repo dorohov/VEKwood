@@ -77,3 +77,26 @@
 #map {
     height: 100%;
 }
+
+@media (max-width: $resp768) {
+    .contacts {
+        &__inner {
+            flex-wrap: wrap;
+            flex-flow: wrap;
+        }
+        &__map {
+            height: 50vh;
+            order: 1;
+        }
+        &__form {
+            &__list {
+                ul {
+                    li {
+                        font-size: 16px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

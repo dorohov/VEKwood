@@ -22,6 +22,17 @@
             font-weight: bold;
             color: #fff;
         }
+        &__img {
+            background: #000;
+            img {
+                transition: .25s all ease;
+            }
+        }
+        &:hover {
+            .events__item__img img {
+                opacity: .6;
+            }
+        }
     }
     &__controll {
         position: absolute;

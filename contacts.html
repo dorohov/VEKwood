@@ -5,8 +5,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>VEKwood - Наши работы</title>
+<title>VEKwood - Контакты</title>
 <link rel="stylesheet" href="dist/css/slick.css">
+<link rel="stylesheet" href="dist/css/animate.css">
 <link rel="stylesheet" href="dist/css/style.css">
 </head>
 <body>
@@ -36,7 +37,7 @@
         <div class="navbar__menu--dropdown__c">
             <ul class="navbar__menu--dropdown__c__in">
                 <li class="navbar__menu--dropdown__i"><a href="production.html" class="navbar__menu--dropdown__l">Производство</a></li>
-                <li class="navbar__menu--dropdown__i"><a href="#" class="navbar__menu--dropdown__l">Контакты</a></li>
+                <li class="navbar__menu--dropdown__i"><a href="contacts.html" class="navbar__menu--dropdown__l">Контакты</a></li>
             </ul>
         </div>
     </li>
@@ -67,7 +68,7 @@
         <div class="navbar__mobile--dropdown__c">
             <ul class="navbar__mobile--dropdown__c__in">
                 <li class="navbar__mobile--dropdown__i"><a href="production.html" class="navbar__mobile--dropdown__l">Производство</a></li>
-                <li class="navbar__mobile--dropdown__i"><a href="#" class="navbar__mobile--dropdown__l">Контакты</a></li>
+                <li class="navbar__mobile--dropdown__i"><a href="contacts.html" class="navbar__mobile--dropdown__l">Контакты</a></li>
             </ul>
         </div>
     </li>
@@ -97,7 +98,7 @@
             <input type="text" placeholder="Имя" minlength="3" name="cn_name" id="cn_name" required data-parsley-no-focus>
         </div>
         <div class="form_b--block1 form_b--block_phone">
-            <input type="text" placeholder="Телефон" minlength="11" name="cn_phone" id="cn_phone" required data-parsley-no-focus>
+            <input type="text" placeholder="Телефон" class="phone--musk" minlength="11" name="cn_phone" id="cn_phone" required data-parsley-no-focus>
         </div>
         <div class="form_b--block1 form_b--block_email">
             <input type="email" placeholder="E-mail" data-validation="email" name="cn_email" id="cn_email" data-parsley-no-focus>
@@ -126,7 +127,12 @@
         </div>
     </main>
 
-    <footer class="footer">
+    <div class="preloader">
+    <svg class="animated infinite bounce delay-2s">
+        <use xlink:href="img/svg/sprites.svg#logo"></use>
+    </svg>
+</div>
+<footer class="footer">
     <div class="footer__inner">
         <div class="footer__soc">
             <ul class="social-btns">
@@ -171,7 +177,10 @@
 <script src="./dist/js/imask.js"></script>
 <script src="./dist/js/vivus.min.js"></script>
 <script src="./dist/js/slick.min.js"></script>
+<script src="./dist/js/svg4everybody.min.js"></script>
+<script src="./dist/js/jquery-ui.min.js"></script>
 <script src="./dist/js/main.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANLxdBSU8fJGR5IzCxzgTbVTdgOsJXcq4&callback=initMap"></script>
+<script>svg4everybody();</script>
 </body>
 </html>

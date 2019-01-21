@@ -94,6 +94,186 @@
             }
         }
     }
+    &-cat {
+        @extend .page;
+        background: $color-dark;
+        min-height: calc(100vh - 110px - 90px);
+        overflow: hidden;
+        &__inner {
+            @extend .container;
+        }
+        &__wrap {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+            .in-tw__block25 {
+                width: 25%;
+            }
+        }
+        &__menu {
+            margin-bottom: 70px;
+            display: flex;
+            &__title {
+                font-size: 18px;
+                color: $color_brown-light;
+                font-weight: 500;
+                margin-bottom: 15px;
+            }
+            &__block {
+                flex-wrap: wrap;
+                display: flex;
+                &.is--pricerange {
+                    margin-left: auto;
+                }
+            }
+            &__list {
+                width: 100%;
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    display: flex;
+                    li {
+                        margin-right: 45px;
+                        a {
+                            display: flex;
+                            align-items: center;
+                            color: #fff;
+                        }
+                    }
+                }
+                &__ico {
+                    max-width: 30px;
+                    width: 100%;
+                    margin-right: 5px;
+                }
+                &__text {
+                    font-size: 18px;
+                    padding-top: 5px;
+                }
+            }
+            &__filter {
+                margin-left: 70px;
+                &__wrap {
+                    display: flex;
+                    a {
+                        color: #fff;
+                        font-size: 18px;
+                        padding-right: 20px;
+                        position: relative;
+                        display: block;
+                        &::after {
+                            content: url(../../img/svg/sprites.svg#filter_arrow);
+                            position: absolute;
+                            width: 18px;
+                        }
+                    }
+                    span {
+                        font-size: 13px;
+                    }
+                }
+                &__item {
+                    margin-right: 30px;
+                }
+            }
+            &__pricerange {
+                width: 100%;
+                padding-left: 20px;
+                padding-right: 40px;
+                position: relative;
+                &::before {
+                    content: 'от';
+                    position: absolute;
+                    font-size: 13px;
+                    color: #fff;
+                    left: 0px;
+                    top: -5px;
+                }
+                &::after {
+                    content: 'до';
+                    position: absolute;
+                    font-size: 13px;
+                    color: #fff;
+                    right: 0px;
+                    top: -5px;
+                }
+                &__values {
+                    display: flex;
+                    padding-top: 15px;
+                    justify-content: space-between;
+                    margin-right: -10px;
+                    input[type="text"] {
+                        padding: 0;
+                        width: auto;
+                        border: none;
+                    }
+                }
+                &__value {
+                    font-size: 10px;
+                    font-style: italic;
+                    color: #fff;
+                    font-weight: 300;
+                }
+            }
+        }
+        &__btn {
+            text-align: center;
+            padding-top: 30px;
+        }
+    }
+}
+
+@media (max-width: 1500px) {
+    .work {
+        &-cat {
+            &__menu {
+                flex-wrap: wrap;
+                &__block {
+                    &.is--filters {
+                        width: 100%;
+                    }
+                    &.is--pricerange {
+                        margin: 0 auto 0 0;
+                    }
+                }
+                &__filter {
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+    &.__filters {
+        margin-bottom: 0;
+        .work-cat__menu__block {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@media (max-width: $resp1400){
+    .work {
+        &-cat {
+            &__wrap {
+                .in-tw__block {
+                    width: 33.333333%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $resp1025) {
+    .work {
+        &-cat {
+            &__wrap {
+                .in-tw__block {
+                    width: 50%;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: $resp768) {
@@ -122,6 +302,45 @@
                 &__content {
                     visibility: visible;
                     opacity: 1;
+                }
+            }
+        }
+        &-cat {
+            &__wrap {
+                .in-tw__block {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .work {
+        &-cat {
+            &__menu {
+                &__block {
+                    &.is--filters {
+                        display: none;
+                    }
+                    &.is--types {
+                        width: 100%;
+                        .work-cat__menu__list {
+                            ul {
+                                display: block;
+                                li {
+                                    margin-bottom: 20px;
+                                    margin-right: 0;
+                                    &:last-child {
+                                        margin-bottom: 0;
+                                    }
+                                    a {
+                                        justify-content: center;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

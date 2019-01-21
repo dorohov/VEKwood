@@ -161,8 +161,12 @@
                         font-size: 14px;
                         line-height: 18px;
                     }
+                    &--comp {
+                        margin-bottom: 10px;
+                    }
                     &--price {
                         font-size: 20px;
+                        line-height: 20px;
                         img {
                             max-width: 14px;
                         }

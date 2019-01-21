@@ -1,0 +1,27 @@
+#slider-range {
+    width: 100%;
+    position: relative;
+    height: 2px;
+    background: #fff;
+    min-width: 190px;
+    margin-left: 10px;
+}
+
+.ui-slider-handle {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    background: #fff;
+    border-radius: 100%;
+    border: 2px solid $color-yellow;
+    top: -6px;
+    outline: none;
+    cursor: pointer;
+    margin-left: -.6em;
+}
+
+.ui-slider-range {
+    height: 100%;
+    background: $color-yellow;
+    position: absolute;
+}

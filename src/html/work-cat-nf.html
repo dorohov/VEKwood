@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    @@include('blocks/_head.html', {"title": "Наши работы"})
+</head>
+<body>
+    <header>
+        @@include('blocks/main/_navbar.html', {"opacity": false})
+    </header>
+    <main class="is--bordered">
+        @@include('blocks/site/work/catalog.html', {"filters": false})
+    </main>
+    @@include('blocks/_footer.html')
+    @@include('blocks/_scripts.html')
+</body>
+</html>

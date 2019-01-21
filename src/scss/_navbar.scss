@@ -143,6 +143,7 @@
     &__mobile {
         &--btn {
             display: none;
+            margin-left: auto;
             .hamburger {
                 outline: none;
                 &-inner {

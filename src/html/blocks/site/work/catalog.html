@@ -1,0 +1,163 @@
+<div class="work-cat">
+    @@include('../../../items/_breadcrumbs.html', {"title": "Наши работы"})
+    <div class="work-cat__inner">
+        <div class="work-cat__menu @@if(filters) {__filters}">
+            <div class="work-cat__menu__block is--types">
+                <div class="work-cat__menu__title">Объект</div>
+                <div class="work-cat__menu__list">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="work-cat__menu__list__ico">
+                                    <img src="img/house.png" alt="">
+                                </div>
+                                <div class="work-cat__menu__list__text">Дома</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="work-cat__menu__list__ico">
+                                    <img src="img/home.png" alt="">
+                                </div>
+                                <div class="work-cat__menu__list__text">Бани</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="work-cat__menu__list__ico">
+                                    <img src="img/circular.png" alt="">
+                                </div>
+                                <div class="work-cat__menu__list__text">Прочее</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            @@if(filters) {
+            <div class="work-cat__menu__block is--filters">
+                <div class="work-cat__menu__filter">
+                    <div class="work-cat__menu__title">Этажность</div>
+                    <div class="work-cat__menu__filter__wrap">
+                        <div class="work-cat__menu__filter__item">
+                            <a href="#"><span>от </span>1</a>
+                        </div>
+                        <div class="work-cat__menu__filter__item">
+                           <a href="#"><span>до </span>5</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-cat__menu__filter">
+                    <div class="work-cat__menu__title">Площадь</div>
+                    <div class="work-cat__menu__filter__wrap">
+                        <div class="work-cat__menu__filter__item">
+                            <a href="#"><span>от </span>50</a>
+                        </div>
+                        <div class="work-cat__menu__filter__item">
+                           <a href="#"><span>до </span>150</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-cat__menu__filter">
+                    <div class="work-cat__menu__title">Технология</div>
+                    <div class="work-cat__menu__filter__wrap">
+                        <div class="work-cat__menu__filter__item">
+                            <a href="#">Брус</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="work-cat__menu__block is--pricerange">
+                <div class="work-cat__menu__title">Цена</div>
+                <div class="work-cat__menu__pricerange">
+                    <div id="slider-range"></div>
+                    <div class="work-cat__menu__pricerange__values">
+                        <div id="slider-range-min" class="work-cat__menu__pricerange__value">0 Р</div>
+                        <div id="slider-range-max" class="work-cat__menu__pricerange__value">1 000 000 Р</div>
+                    </div>
+                </div>
+            </div>
+        }
+        </div>
+        <div class="work-cat__wrap">
+            @@include('../catalog/_item.html', {
+                "size": "25",
+                "uri": "#",
+                "title": "Дом из двойного бруса",
+                "company": "Vekwood",
+                "price": "150 000",
+                "qm": "364",
+                "img": "img/index22.jpg"
+            })
+            @@include('../catalog/_item.html', {
+                "size": "25",
+                "uri": "#",
+                "title": "Дом из двойного бруса",
+                "company": "Vekwood",
+                "price": "150 000",
+                "qm": "364",
+                "img": "img/index22.jpg"
+            })
+            @@include('../catalog/_item.html', {
+                "size": "25",
+                "uri": "#",
+                "title": "Дом из двойного бруса",
+                "company": "Vekwood",
+                "price": "150 000",
+                "qm": "364",
+                "img": "img/index22.jpg"
+            })
+            @@include('../catalog/_item.html', {
+                "size": "25",
+                "uri": "#",
+                "title": "Дом из двойного бруса",
+                "company": "Vekwood",
+                "price": "150 000",
+                "qm": "364",
+                "img": "img/index22.jpg"
+            })
+            @@include('../catalog/_item.html', {
+                "size": "25",
+                "uri": "#",
+                "title": "Дом из двойного бруса",
+                "company": "Vekwood",
+                "price": "150 000",
+                "qm": "364",
+                "img": "img/index22.jpg"
+            })
+            @@include('../catalog/_item.html', {
+                "size": "25",
+                "uri": "#",
+                "title": "Дом из двойного бруса",
+                "company": "Vekwood",
+                "price": "150 000",
+                "qm": "364",
+                "img": "img/index22.jpg"
+            })
+            @@include('../catalog/_item.html', {
+                "size": "25",
+                "uri": "#",
+                "title": "Дом из двойного бруса",
+                "company": "Vekwood",
+                "price": "150 000",
+                "qm": "364",
+                "img": "img/index22.jpg"
+            })
+            @@include('../catalog/_item.html', {
+                "size": "25",
+                "uri": "#",
+                "title": "Дом из двойного бруса",
+                "company": "Vekwood",
+                "price": "150 000",
+                "qm": "364",
+                "img": "img/index22.jpg"
+            })
+        </div>
+        <div class="work-cat__btn">
+            @@include('../../../items/_button.html', {
+                "text": "Смотреть все",
+                "type": "classic",
+                "url": "#"
+            })
+        </div>
+    </div>
+</div>
