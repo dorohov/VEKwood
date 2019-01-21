@@ -22,6 +22,18 @@
     &.is--black {
         color: #202020;
     }
+    &.is--bgsub {
+        .heading_sub {
+            text-align: left;
+            max-width: 100%;
+            line-height: 33px;
+            font-size: 30px;
+            span {
+                color: $color_brown-light;
+                font-weight: 600;
+            }
+        }
+    }
     &_sub {
         line-height: 23px;
         font-size: 18px;

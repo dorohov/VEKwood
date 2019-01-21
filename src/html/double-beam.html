@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    @@include('blocks/_head.html', {"title": "Дом из двойного бруса Vekwood"})
+</head>
+<body>
+    <header>
+        @@include('blocks/main/_navbar.html', {"opacity": false})
+    </header>
+    <main>
+        <div class="work-home">
+            @@include('items/_breadcrumbs.html', {"title": "Наши работы"})
+            @@include('items/_heading.html', {
+                "text": "Дом из двойного бруса Vekwood",
+                "sub": true,
+                "sub_text": "Дата сдачи: <span>июль 2018</span>",
+                "align": "left",
+                "color": "white is--bgsub"
+            })
+            <div class="work-home__inner">
+                @@include('blocks/site/home/_slider.html')
+                @@include('blocks/site/home/_video.html')
+            </div>
+        </div>
+        <div class="work-home__morevideo">
+            <div class="work-home__morevideo__title">
+                Смотрите больше проектов в социальных сетях и на нашем канале
+            </div>
+            @@include('blocks/site/_more-video.html', {
+                "title": false,
+                "btn_text": "Больше видео"
+            })
+        </div>
+    </main>
+
+    @@include('blocks/_footer.html')
+    @@include('blocks/_scripts.html')
+</body>
+</html>

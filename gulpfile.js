@@ -14,6 +14,7 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),                
     rename = require('gulp-rename'),
     notify = require("gulp-notify"),
+    htmlbeautify = require('gulp-html-beautify'),
     sourcemaps = require('gulp-sourcemaps');
     // fontgen = require('gulp-fontgen');
 
@@ -72,6 +73,13 @@ function html() {
                 .on('end', browserSync.reload)
 }
 
+function htmlNormalize() {
+    return gulp.src('./*.html')
+            .pipe(htmlbeautify())
+            .pipe(gulp.dest('./'))
+            .on('end', browserSync.reload)
+}
+
 function js() {
     return gulp.src(assets.js)
                 .pipe(sourcemaps.init())
@@ -107,6 +115,7 @@ gulp.task('css', css)
 gulp.task('svgMap', svgMap)
 gulp.task('imageMinify', imageMinify)
 gulp.task('html', html)
+// gulp.task('htmlNormalize', htmlNormalize)
 gulp.task('js', js)
 // gulp.task('fonts', fonts)
 gulp.task('browser_sync', browser_sync)
@@ -118,6 +127,7 @@ gulp.task('build', function() {
     // gulp.watch(assets.fonts, gulp.series('fonts'))
     gulp.watch(assets.svg, gulp.series('svgMap'))
     gulp.watch(assets.images, gulp.series('imageMinify'))
+    // gulp.watch('./*.html', gulp.series('htmlNormalize'))
 })
 
 gulp.task('default', gulp.series(

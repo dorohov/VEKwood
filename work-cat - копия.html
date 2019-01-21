@@ -1,400 +1,405 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta name="theme-color" content="#2E221C">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>VEKwood - Наши работы</title>
-<link rel="stylesheet" href="dist/css/slick.css">
-<link rel="stylesheet" href="dist/css/animate.css">
-<link rel="stylesheet" href="dist/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VEKwood - Наши работы</title>
+    <link rel="stylesheet" href="dist/css/slick.css">
+    <link rel="stylesheet" href="dist/css/animate.css">
+    <link rel="stylesheet" href="dist/css/style.css">
 </head>
+
 <body>
     <header>
         <div class="navbar ">
-    <div class="navbar__inner">
-        <div class="navbar__logo">
-            <a href="index.html">
-                <div class="navbar__logo--img">
-                    <svg class="svg-logo-dims">
-    <use xlink:href="img/svg/sprites.svg#logo"></use>
-</svg>
+            <div class="navbar__inner">
+                <div class="navbar__logo">
+                    <a href="index.html">
+                        <div class="navbar__logo--img">
+                            <svg class="svg-logo-dims">
+                                <use xlink:href="img/svg/sprites.svg#logo"></use>
+                            </svg>
+                        </div>
+                        <div class="navbar__logo--text">
+                            Завод деревянных конструкций
+                        </div>
+                    </a>
                 </div>
-                <div class="navbar__logo--text">
-                    Завод деревянных конструкций
-                </div>
-            </a>
-        </div>
-        <div class="navbar__menu">
-            <ul>
-    <li class="navbar__menu--item"><a href="#" class="navbar__menu--link">Каркасные дома</a></li>
-    <li class="navbar__menu--item"><a href="#" class="navbar__menu--link">Двойной брус</a></li>
-    <li class="navbar__menu--item"><a href="#" class="navbar__menu--link">Деревянные фермы</a></li>
-    <li class="navbar__menu--item"><a href="planning.html" class="navbar__menu--link">Проектирование</a></li>
-    <li class="navbar__menu--item navbar__menu--dropdown">
-        <a href="about.html" class="navbar__menu--link">О компании</a>
-        <div class="navbar__menu--dropdown__c">
-            <ul class="navbar__menu--dropdown__c__in">
-                <li class="navbar__menu--dropdown__i"><a href="production.html" class="navbar__menu--dropdown__l">Производство</a></li>
-                <li class="navbar__menu--dropdown__i"><a href="contacts.html" class="navbar__menu--dropdown__l">Контакты</a></li>
-            </ul>
-        </div>
-    </li>
-</ul>
-        </div>
-        <div class="navbar__btn">
-            <a href="#" class="is--bordered button">Выбрать дом</a>
-        </div>
-        <div class="navbar__phone ">
-    <a href="tel:+79102623232">+7 (910) <span>262-32-32</span></a>
-</div>
-        <div class="navbar__mobile--btn">
-            <button class="hamburger hamburger--spring" type="button">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </button>
-        </div>
-        <div class="navbar__mobile--container">
-            <div class="navbar__mobile--menu">
-                <ul>
-    <li class="navbar__mobile--item"><a href="#" class="navbar__mobile--link">Каркасные дома</a></li>
-    <li class="navbar__mobile--item"><a href="#" class="navbar__mobile--link">Двойной брус</a></li>
-    <li class="navbar__mobile--item"><a href="#" class="navbar__mobile--link">Деревянные фермы</a></li>
-    <li class="navbar__mobile--item"><a href="planning.html" class="navbar__mobile--link">Проектирование</a></li>
-    <li class="navbar__mobile--item navbar__mobile--dropdown">
-        <a href="about.html" class="navbar__mobile--link">О компании</a>
-        <div class="navbar__mobile--dropdown__c">
-            <ul class="navbar__mobile--dropdown__c__in">
-                <li class="navbar__mobile--dropdown__i"><a href="production.html" class="navbar__mobile--dropdown__l">Производство</a></li>
-                <li class="navbar__mobile--dropdown__i"><a href="contacts.html" class="navbar__mobile--dropdown__l">Контакты</a></li>
-            </ul>
-        </div>
-    </li>
-</ul>
-            </div>
-            <div class="navbar__phone is--mobile">
-    <a href="tel:+79102623232">+7 (910) <span>262-32-32</span></a>
-</div>
-        </div>
-    </div>
-</div>
-    </header>
-    <main class="is--bordered">
-        <div class="work-cat">
-    <div class="breadcrumbs">
-    <ul>
-        <li class="is--parent"><a href="#">Главная</a></li>
-        <li class="is--active">Наши работы</li>
-    </ul>
-</div>
-    <div class="work-cat__inner">
-        <div class="work-cat__menu">
-            <div class="work-cat__menu__block is--types">
-                <div class="work-cat__menu__title">Объект</div>
-                <div class="work-cat__menu__list">
+                <div class="navbar__menu">
                     <ul>
-                        <li>
-                            <a href="#">
-                                <div class="work-cat__menu__list__ico">
-                                    <img src="img/house.png" alt="">
-                                </div>
-                                <div class="work-cat__menu__list__text">Дома</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="work-cat__menu__list__ico">
-                                    <img src="img/home.png" alt="">
-                                </div>
-                                <div class="work-cat__menu__list__text">Бани</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="work-cat__menu__list__ico">
-                                    <img src="img/circular.png" alt="">
-                                </div>
-                                <div class="work-cat__menu__list__text">Прочее</div>
-                            </a>
+                        <li class="navbar__menu--item"><a href="#" class="navbar__menu--link">Каркасные дома</a></li>
+                        <li class="navbar__menu--item"><a href="#" class="navbar__menu--link">Двойной брус</a></li>
+                        <li class="navbar__menu--item"><a href="#" class="navbar__menu--link">Деревянные фермы</a></li>
+                        <li class="navbar__menu--item"><a href="planning.html" class="navbar__menu--link">Проектирование</a></li>
+                        <li class="navbar__menu--item navbar__menu--dropdown">
+                            <a href="about.html" class="navbar__menu--link">О компании</a>
+                            <div class="navbar__menu--dropdown__c">
+                                <ul class="navbar__menu--dropdown__c__in">
+                                    <li class="navbar__menu--dropdown__i"><a href="production.html" class="navbar__menu--dropdown__l">Производство</a></li>
+                                    <li class="navbar__menu--dropdown__i"><a href="contacts.html" class="navbar__menu--dropdown__l">Контакты</a></li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div class="work-cat__menu__block is--filters">
-                <div class="work-cat__menu__filter">
-                    <div class="work-cat__menu__title">Этажность</div>
-                    <div class="work-cat__menu__filter__wrap">
-                        <div class="work-cat__menu__filter__item">
-                            <a href="#"><span>от </span>1</a>
-                        </div>
-                        <div class="work-cat__menu__filter__item">
-                           <a href="#"><span>до </span>5</a>
-                        </div>
-                    </div>
+                <div class="navbar__btn">
+                    <a href="#" class="is--bordered button">Выбрать дом</a>
                 </div>
-                <div class="work-cat__menu__filter">
-                    <div class="work-cat__menu__title">Площадь</div>
-                    <div class="work-cat__menu__filter__wrap">
-                        <div class="work-cat__menu__filter__item">
-                            <a href="#"><span>от </span>50</a>
-                        </div>
-                        <div class="work-cat__menu__filter__item">
-                           <a href="#"><span>до </span>150</a>
-                        </div>
-                    </div>
+                <div class="navbar__phone ">
+                    <a href="tel:+79102623232">+7 (910) <span>262-32-32</span></a>
                 </div>
-                <div class="work-cat__menu__filter">
-                    <div class="work-cat__menu__title">Технология</div>
-                    <div class="work-cat__menu__filter__wrap">
-                        <div class="work-cat__menu__filter__item">
-                            <a href="#">Брус</a>
-                        </div>
-                    </div>
+                <div class="navbar__mobile--btn">
+                    <button class="hamburger hamburger--spring" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
                 </div>
-            </div>
-            <div class="work-cat__menu__block is--pricerange">
-                <div class="work-cat__menu__title">Цена</div>
-                <div class="work-cat__menu__pricerange">
-                    <div id="slider-range"></div>
-                    <div class="work-cat__menu__pricerange__values">
-                        <div id="slider-range-min" class="work-cat__menu__pricerange__value">0 Р</div>
-                        <div id="slider-range-max" class="work-cat__menu__pricerange__value">1 000 000 Р</div>
+                <div class="navbar__mobile--container">
+                    <div class="navbar__mobile--menu">
+                        <ul>
+                            <li class="navbar__mobile--item"><a href="#" class="navbar__mobile--link">Каркасные дома</a></li>
+                            <li class="navbar__mobile--item"><a href="#" class="navbar__mobile--link">Двойной брус</a></li>
+                            <li class="navbar__mobile--item"><a href="#" class="navbar__mobile--link">Деревянные фермы</a></li>
+                            <li class="navbar__mobile--item"><a href="planning.html" class="navbar__mobile--link">Проектирование</a></li>
+                            <li class="navbar__mobile--item navbar__mobile--dropdown">
+                                <a href="about.html" class="navbar__mobile--link">О компании</a>
+                                <div class="navbar__mobile--dropdown__c">
+                                    <ul class="navbar__mobile--dropdown__c__in">
+                                        <li class="navbar__mobile--dropdown__i"><a href="production.html" class="navbar__mobile--dropdown__l">Производство</a></li>
+                                        <li class="navbar__mobile--dropdown__i"><a href="contacts.html" class="navbar__mobile--dropdown__l">Контакты</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar__phone is--mobile">
+                        <a href="tel:+79102623232">+7 (910) <span>262-32-32</span></a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="work-cat__wrap">
-            <div class="in-tw__block in-tw__block25">
-        <a href="#">
-            <div class="in-tw__block--info">
-                <div class="in-tw__block--info-left">
-                    <div class="in-tw__block--title">Дом из двойного бруса</div>
-                    <div class="in-tw__block--comp">Vekwood</div>
-                    <div class="in-tw__block--price">150 000 <span>
-                        <svg class="svg-ruble-dims">
-                            <use xlink:href="img/svg/sprites.svg#ruble"></use>
-                        </svg>
-                    </span></div>
+    </header>
+    <main class="is--bordered">
+        <div class="work-cat">
+            <div class="breadcrumbs">
+                <ul>
+                    <li class="is--parent"><a href="#">Главная</a></li>
+                    <li class="is--active">Наши работы</li>
+                </ul>
+            </div>
+            <div class="work-cat__inner">
+                <div class="work-cat__menu">
+                    <div class="work-cat__menu__block is--types">
+                        <div class="work-cat__menu__title">Объект</div>
+                        <div class="work-cat__menu__list">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="work-cat__menu__list__ico">
+                                            <img src="img/house.png" alt="">
+                                        </div>
+                                        <div class="work-cat__menu__list__text">Дома</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="work-cat__menu__list__ico">
+                                            <img src="img/home.png" alt="">
+                                        </div>
+                                        <div class="work-cat__menu__list__text">Бани</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="work-cat__menu__list__ico">
+                                            <img src="img/circular.png" alt="">
+                                        </div>
+                                        <div class="work-cat__menu__list__text">Прочее</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="work-cat__menu__block is--filters">
+                        <div class="work-cat__menu__filter">
+                            <div class="work-cat__menu__title">Этажность</div>
+                            <div class="work-cat__menu__filter__wrap">
+                                <div class="work-cat__menu__filter__item">
+                                    <a href="#"><span>от </span>1</a>
+                                </div>
+                                <div class="work-cat__menu__filter__item">
+                                    <a href="#"><span>до </span>5</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work-cat__menu__filter">
+                            <div class="work-cat__menu__title">Площадь</div>
+                            <div class="work-cat__menu__filter__wrap">
+                                <div class="work-cat__menu__filter__item">
+                                    <a href="#"><span>от </span>50</a>
+                                </div>
+                                <div class="work-cat__menu__filter__item">
+                                    <a href="#"><span>до </span>150</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work-cat__menu__filter">
+                            <div class="work-cat__menu__title">Технология</div>
+                            <div class="work-cat__menu__filter__wrap">
+                                <div class="work-cat__menu__filter__item">
+                                    <a href="#">Брус</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-cat__menu__block is--pricerange">
+                        <div class="work-cat__menu__title">Цена</div>
+                        <div class="work-cat__menu__pricerange">
+                            <div id="slider-range"></div>
+                            <div class="work-cat__menu__pricerange__values">
+                                <div id="slider-range-min" class="work-cat__menu__pricerange__value">0 Р</div>
+                                <div id="slider-range-max" class="work-cat__menu__pricerange__value">1 000 000 Р</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="in-tw__block--info-right">
-                    364 <span>м<sup>2</sup></span>
+                <div class="work-cat__wrap">
+                    <div class="in-tw__block in-tw__block25">
+                        <a href="#">
+                            <div class="in-tw__block--info">
+                                <div class="in-tw__block--info-left">
+                                    <div class="in-tw__block--title">Дом из двойного бруса</div>
+                                    <div class="in-tw__block--comp">Vekwood</div>
+                                    <div class="in-tw__block--price">150 000 <span>
+                                            <svg class="svg-ruble-dims">
+                                                <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                            </svg>
+                                        </span></div>
+                                </div>
+                                <div class="in-tw__block--info-right">
+                                    364 <span>м<sup>2</sup></span>
+                                </div>
+                            </div>
+                            <div class="in-tw__block--img">
+                                <img src="img/index22.jpg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="in-tw__block in-tw__block25">
+                        <a href="#">
+                            <div class="in-tw__block--info">
+                                <div class="in-tw__block--info-left">
+                                    <div class="in-tw__block--title">Дом из двойного бруса</div>
+                                    <div class="in-tw__block--comp">Vekwood</div>
+                                    <div class="in-tw__block--price">150 000 <span>
+                                            <svg class="svg-ruble-dims">
+                                                <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                            </svg>
+                                        </span></div>
+                                </div>
+                                <div class="in-tw__block--info-right">
+                                    364 <span>м<sup>2</sup></span>
+                                </div>
+                            </div>
+                            <div class="in-tw__block--img">
+                                <img src="img/index22.jpg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="in-tw__block in-tw__block25">
+                        <a href="#">
+                            <div class="in-tw__block--info">
+                                <div class="in-tw__block--info-left">
+                                    <div class="in-tw__block--title">Дом из двойного бруса</div>
+                                    <div class="in-tw__block--comp">Vekwood</div>
+                                    <div class="in-tw__block--price">150 000 <span>
+                                            <svg class="svg-ruble-dims">
+                                                <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                            </svg>
+                                        </span></div>
+                                </div>
+                                <div class="in-tw__block--info-right">
+                                    364 <span>м<sup>2</sup></span>
+                                </div>
+                            </div>
+                            <div class="in-tw__block--img">
+                                <img src="img/index22.jpg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="in-tw__block in-tw__block25">
+                        <a href="#">
+                            <div class="in-tw__block--info">
+                                <div class="in-tw__block--info-left">
+                                    <div class="in-tw__block--title">Дом из двойного бруса</div>
+                                    <div class="in-tw__block--comp">Vekwood</div>
+                                    <div class="in-tw__block--price">150 000 <span>
+                                            <svg class="svg-ruble-dims">
+                                                <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                            </svg>
+                                        </span></div>
+                                </div>
+                                <div class="in-tw__block--info-right">
+                                    364 <span>м<sup>2</sup></span>
+                                </div>
+                            </div>
+                            <div class="in-tw__block--img">
+                                <img src="img/index22.jpg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="in-tw__block in-tw__block25">
+                        <a href="#">
+                            <div class="in-tw__block--info">
+                                <div class="in-tw__block--info-left">
+                                    <div class="in-tw__block--title">Дом из двойного бруса</div>
+                                    <div class="in-tw__block--comp">Vekwood</div>
+                                    <div class="in-tw__block--price">150 000 <span>
+                                            <svg class="svg-ruble-dims">
+                                                <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                            </svg>
+                                        </span></div>
+                                </div>
+                                <div class="in-tw__block--info-right">
+                                    364 <span>м<sup>2</sup></span>
+                                </div>
+                            </div>
+                            <div class="in-tw__block--img">
+                                <img src="img/index22.jpg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="in-tw__block in-tw__block25">
+                        <a href="#">
+                            <div class="in-tw__block--info">
+                                <div class="in-tw__block--info-left">
+                                    <div class="in-tw__block--title">Дом из двойного бруса</div>
+                                    <div class="in-tw__block--comp">Vekwood</div>
+                                    <div class="in-tw__block--price">150 000 <span>
+                                            <svg class="svg-ruble-dims">
+                                                <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                            </svg>
+                                        </span></div>
+                                </div>
+                                <div class="in-tw__block--info-right">
+                                    364 <span>м<sup>2</sup></span>
+                                </div>
+                            </div>
+                            <div class="in-tw__block--img">
+                                <img src="img/index22.jpg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="in-tw__block in-tw__block25">
+                        <a href="#">
+                            <div class="in-tw__block--info">
+                                <div class="in-tw__block--info-left">
+                                    <div class="in-tw__block--title">Дом из двойного бруса</div>
+                                    <div class="in-tw__block--comp">Vekwood</div>
+                                    <div class="in-tw__block--price">150 000 <span>
+                                            <svg class="svg-ruble-dims">
+                                                <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                            </svg>
+                                        </span></div>
+                                </div>
+                                <div class="in-tw__block--info-right">
+                                    364 <span>м<sup>2</sup></span>
+                                </div>
+                            </div>
+                            <div class="in-tw__block--img">
+                                <img src="img/index22.jpg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="in-tw__block in-tw__block25">
+                        <a href="#">
+                            <div class="in-tw__block--info">
+                                <div class="in-tw__block--info-left">
+                                    <div class="in-tw__block--title">Дом из двойного бруса</div>
+                                    <div class="in-tw__block--comp">Vekwood</div>
+                                    <div class="in-tw__block--price">150 000 <span>
+                                            <svg class="svg-ruble-dims">
+                                                <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                            </svg>
+                                        </span></div>
+                                </div>
+                                <div class="in-tw__block--info-right">
+                                    364 <span>м<sup>2</sup></span>
+                                </div>
+                            </div>
+                            <div class="in-tw__block--img">
+                                <img src="img/index22.jpg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="work-cat__btn">
+                    <a href="#" class="is--classic button">Смотреть все</a>
                 </div>
             </div>
-            <div class="in-tw__block--img">
-                <img src="img/index22.jpg" alt="">
-            </div>
-        </a>
-    </div>
-            <div class="in-tw__block in-tw__block25">
-        <a href="#">
-            <div class="in-tw__block--info">
-                <div class="in-tw__block--info-left">
-                    <div class="in-tw__block--title">Дом из двойного бруса</div>
-                    <div class="in-tw__block--comp">Vekwood</div>
-                    <div class="in-tw__block--price">150 000 <span>
-                        <svg class="svg-ruble-dims">
-                            <use xlink:href="img/svg/sprites.svg#ruble"></use>
-                        </svg>
-                    </span></div>
-                </div>
-                <div class="in-tw__block--info-right">
-                    364 <span>м<sup>2</sup></span>
-                </div>
-            </div>
-            <div class="in-tw__block--img">
-                <img src="img/index22.jpg" alt="">
-            </div>
-        </a>
-    </div>
-            <div class="in-tw__block in-tw__block25">
-        <a href="#">
-            <div class="in-tw__block--info">
-                <div class="in-tw__block--info-left">
-                    <div class="in-tw__block--title">Дом из двойного бруса</div>
-                    <div class="in-tw__block--comp">Vekwood</div>
-                    <div class="in-tw__block--price">150 000 <span>
-                        <svg class="svg-ruble-dims">
-                            <use xlink:href="img/svg/sprites.svg#ruble"></use>
-                        </svg>
-                    </span></div>
-                </div>
-                <div class="in-tw__block--info-right">
-                    364 <span>м<sup>2</sup></span>
-                </div>
-            </div>
-            <div class="in-tw__block--img">
-                <img src="img/index22.jpg" alt="">
-            </div>
-        </a>
-    </div>
-            <div class="in-tw__block in-tw__block25">
-        <a href="#">
-            <div class="in-tw__block--info">
-                <div class="in-tw__block--info-left">
-                    <div class="in-tw__block--title">Дом из двойного бруса</div>
-                    <div class="in-tw__block--comp">Vekwood</div>
-                    <div class="in-tw__block--price">150 000 <span>
-                        <svg class="svg-ruble-dims">
-                            <use xlink:href="img/svg/sprites.svg#ruble"></use>
-                        </svg>
-                    </span></div>
-                </div>
-                <div class="in-tw__block--info-right">
-                    364 <span>м<sup>2</sup></span>
-                </div>
-            </div>
-            <div class="in-tw__block--img">
-                <img src="img/index22.jpg" alt="">
-            </div>
-        </a>
-    </div>
-            <div class="in-tw__block in-tw__block25">
-        <a href="#">
-            <div class="in-tw__block--info">
-                <div class="in-tw__block--info-left">
-                    <div class="in-tw__block--title">Дом из двойного бруса</div>
-                    <div class="in-tw__block--comp">Vekwood</div>
-                    <div class="in-tw__block--price">150 000 <span>
-                        <svg class="svg-ruble-dims">
-                            <use xlink:href="img/svg/sprites.svg#ruble"></use>
-                        </svg>
-                    </span></div>
-                </div>
-                <div class="in-tw__block--info-right">
-                    364 <span>м<sup>2</sup></span>
-                </div>
-            </div>
-            <div class="in-tw__block--img">
-                <img src="img/index22.jpg" alt="">
-            </div>
-        </a>
-    </div>
-            <div class="in-tw__block in-tw__block25">
-        <a href="#">
-            <div class="in-tw__block--info">
-                <div class="in-tw__block--info-left">
-                    <div class="in-tw__block--title">Дом из двойного бруса</div>
-                    <div class="in-tw__block--comp">Vekwood</div>
-                    <div class="in-tw__block--price">150 000 <span>
-                        <svg class="svg-ruble-dims">
-                            <use xlink:href="img/svg/sprites.svg#ruble"></use>
-                        </svg>
-                    </span></div>
-                </div>
-                <div class="in-tw__block--info-right">
-                    364 <span>м<sup>2</sup></span>
-                </div>
-            </div>
-            <div class="in-tw__block--img">
-                <img src="img/index22.jpg" alt="">
-            </div>
-        </a>
-    </div>
-            <div class="in-tw__block in-tw__block25">
-        <a href="#">
-            <div class="in-tw__block--info">
-                <div class="in-tw__block--info-left">
-                    <div class="in-tw__block--title">Дом из двойного бруса</div>
-                    <div class="in-tw__block--comp">Vekwood</div>
-                    <div class="in-tw__block--price">150 000 <span>
-                        <svg class="svg-ruble-dims">
-                            <use xlink:href="img/svg/sprites.svg#ruble"></use>
-                        </svg>
-                    </span></div>
-                </div>
-                <div class="in-tw__block--info-right">
-                    364 <span>м<sup>2</sup></span>
-                </div>
-            </div>
-            <div class="in-tw__block--img">
-                <img src="img/index22.jpg" alt="">
-            </div>
-        </a>
-    </div>
-            <div class="in-tw__block in-tw__block25">
-        <a href="#">
-            <div class="in-tw__block--info">
-                <div class="in-tw__block--info-left">
-                    <div class="in-tw__block--title">Дом из двойного бруса</div>
-                    <div class="in-tw__block--comp">Vekwood</div>
-                    <div class="in-tw__block--price">150 000 <span>
-                        <svg class="svg-ruble-dims">
-                            <use xlink:href="img/svg/sprites.svg#ruble"></use>
-                        </svg>
-                    </span></div>
-                </div>
-                <div class="in-tw__block--info-right">
-                    364 <span>м<sup>2</sup></span>
-                </div>
-            </div>
-            <div class="in-tw__block--img">
-                <img src="img/index22.jpg" alt="">
-            </div>
-        </a>
-    </div>
         </div>
-        <div class="work-cat__btn">
-            <a href="#" class="is--classic button">Смотреть все</a>
-        </div>
-    </div>
-</div>
     </main>
     <div class="preloader">
-    <svg class="animated infinite bounce delay-2s">
-        <use xlink:href="img/svg/sprites.svg#logo"></use>
-    </svg>
-</div>
-<footer class="footer">
-    <div class="footer__inner">
-        <div class="footer__soc">
-            <ul class="social-btns">
-    <li><a href="#"><svg class="svg-youtube-dims">
-    <use xlink:href="img/svg/sprites.svg#youtube"></use>
-</svg></a></li>
-    <li><a href="#"><svg class="svg-vk-dims">
-    <use xlink:href="img/svg/sprites.svg#vk"></use>
-</svg></a></li>
-    <li><a href="#"><svg class="svg-instagram-dims">
-    <use xlink:href="img/svg/sprites.svg#instagram"></use>
-</svg></a></li>
-</ul>
-        </div>
-        <div class="footer__menu">
-            <nav>
-                <ul>
-                    <li><a href="#">Дома из двойного бруса</a></li>
-                    <li><a href="#">Каркасные дома</a></li>
-                    <li><a href="#">Стропильные конструкции</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="footer__phone">
-            <a href="tel:+79102623232">+7 (910) <span>262-32-32</span></a>
-        </div>
-        <div class="footer__dorohov">
-            <a href="http://dorohovdesign.ru/" target="_blank">
-                <div class="footer__dorohov--text">Создание сайта -</div>
-                <div class="footer__dorohov--img">
-                    <svg class="svg-dorohov-dims">
-    <use xlink:href="img/svg/sprites.svg#dorohov"></use>
-</svg>
-                </div>
-            </a>
-        </div>
+        <svg class="animated infinite bounce delay-2s">
+            <use xlink:href="img/svg/sprites.svg#logo"></use>
+        </svg>
     </div>
-</footer>
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__soc">
+                <ul class="social-btns">
+                    <li><a href="#"><svg class="svg-youtube-dims">
+                                <use xlink:href="img/svg/sprites.svg#youtube"></use>
+                            </svg></a></li>
+                    <li><a href="#"><svg class="svg-vk-dims">
+                                <use xlink:href="img/svg/sprites.svg#vk"></use>
+                            </svg></a></li>
+                    <li><a href="#"><svg class="svg-instagram-dims">
+                                <use xlink:href="img/svg/sprites.svg#instagram"></use>
+                            </svg></a></li>
+                </ul>
+            </div>
+            <div class="footer__menu">
+                <nav>
+                    <ul>
+                        <li><a href="#">Дома из двойного бруса</a></li>
+                        <li><a href="#">Каркасные дома</a></li>
+                        <li><a href="#">Стропильные конструкции</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__phone">
+                <a href="tel:+79102623232">+7 (910) <span>262-32-32</span></a>
+            </div>
+            <div class="footer__dorohov">
+                <a href="http://dorohovdesign.ru/" target="_blank">
+                    <div class="footer__dorohov--text">Создание сайта -</div>
+                    <div class="footer__dorohov--img">
+                        <svg class="svg-dorohov-dims">
+                            <use xlink:href="img/svg/sprites.svg#dorohov"></use>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </footer>
     <script src="./dist/js/jquery-3.3.1.min.js"></script>
-<script src="./dist/js/parsley.min.js"></script>
-<script src="./dist/js/i18n/ru.js"></script>
-<script src="./dist/js/imask.js"></script>
-<script src="./dist/js/vivus.min.js"></script>
-<script src="./dist/js/slick.min.js"></script>
-<script src="./dist/js/svg4everybody.min.js"></script>
-<script src="./dist/js/jquery-ui.min.js"></script>
-<script src="./dist/js/main.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANLxdBSU8fJGR5IzCxzgTbVTdgOsJXcq4&callback=initMap"></script>
-<script>svg4everybody();</script>
+    <script src="./dist/js/parsley.min.js"></script>
+    <script src="./dist/js/i18n/ru.js"></script>
+    <script src="./dist/js/imask.js"></script>
+    <script src="./dist/js/vivus.min.js"></script>
+    <script src="./dist/js/slick.min.js"></script>
+    <script src="./dist/js/svg4everybody.min.js"></script>
+    <script src="./dist/js/jquery-ui.min.js"></script>
+    <script src="./dist/js/main.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANLxdBSU8fJGR5IzCxzgTbVTdgOsJXcq4&callback=initMap"></script>
+    <script>
+        svg4everybody();
+    </script>
 </body>
+
 </html>
