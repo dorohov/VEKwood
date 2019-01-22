@@ -1,0 +1,42 @@
+<div class="chome-on">
+        @@include('../../../items/_breadcrumbs.html', {"title": "Выбрать дом"})
+        @@include('../../../items/_heading.html', {
+            "text": "Дом из двойного бруса Vekwood",
+            "sub": false,
+            "sub_text": "",
+            "align": "left",
+            "color": "white"
+        })
+    <div class="chome-on__inner">
+        <div class="chome-on__left">
+            <div class="chome-on__modal modal-target" data-modalid="slider">
+                <div class="chome-on__modal__text">
+                    <div class="chome-on__modal__nav">
+                        <span>01</span>/05
+                    </div>
+                    <div class="chome-on__modal__btn">
+                        @@include('../../../items/_svg.html', {"name": "camera"})
+                    </div>
+                </div>
+                <img src="img/slider_modal.jpg" alt="">
+            </div>
+        </div>
+        <div class="chome-on__right">
+            <ul class="chome-on__list">
+                <li class="chome-on__list-title">Общая площадь:</li>
+                <li class="chome-on__list-desc">151 м<sup>2</sup></li>
+                <li class="chome-on__list-title">Количество человек:</li>
+                <li class="chome-on__list-desc">3-4</li>
+                <li class="chome-on__list-title">Этажность:</li>
+                <li class="chome-on__list-desc">1 этаж</li>
+                <li class="chome-on__list-title">Цена:</li>
+                <li class="chome-on__list-desc">150 000 <span>@@include('../../../items/_svg.html', {"name": "ruble"})</span></li>
+            </ul>
+            @@include('../../../items/_button.html', {
+                "text": "Заказать",
+                "type": "classic",
+                "url": "#"
+            })
+        </div>
+    </div>
+</div>

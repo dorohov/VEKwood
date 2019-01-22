@@ -1,6 +1,9 @@
 body {
     font-family: 'Muller';
     background: $color_bg;
+    &.is--modal {
+        overflow: hidden;
+    }
 }
 
 * {
