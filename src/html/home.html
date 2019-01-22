@@ -11,6 +11,18 @@
         <div class="chome">
             @@include('blocks/site/chome/_one.html')
             @@include('blocks/site/chome/_two.html')
+            @@include('blocks/site/index/_index-video.html', {
+                "header_align": "left",
+                "bg_type": "empty",
+                "header_text": "Видео о проекте",
+                "type": "two"
+            })
+            <!-- Комлпектация -->
+            <!-- Слайдер -->
+            @@include('forms/_form_big.html', {
+                "heading": "Заказать расчет индивидуального проекта",
+                "sub_heading": "Закажите проектную документацию у тех, кто разбирается в строительсве. <br> Мы ответим вам в течение 1 рабочего дня"
+            })
         </div>
     </main>
     @@include('blocks/_footer.html')

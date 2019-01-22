@@ -340,11 +340,40 @@
     &-video {
         @extend .slide;
         background: $color_dark;
+        overflow: hidden;
         &.is--vw {
-
+            .in-video {
+                &__inner {
+                    &::before {
+                        content: 'V';
+                        color: $color_brown-light;
+                        font-size: 100px;
+                        position: absolute;
+                        right: 350px;
+                        top: -160px;
+                        font-weight: 600;
+                        font-size: 500px;
+                        opacity: .05;
+                        z-index: 0;
+                    }
+                    &::after {
+                        content: 'W';
+                        color: $color_brown-light;
+                        font-size: 100px;
+                        position: absolute;
+                        right: -200px;
+                        bottom: 0;
+                        font-weight: 600;
+                        font-size: 500px;
+                        opacity: .05;
+                        z-index: 0;
+                    }
+                }
+            }
         }
         &__inner {
             @extend .container;
+            position: relative;
         }
         &__top {
             display: flex;
@@ -360,6 +389,8 @@
         &__text {
             max-width: 500px;
             margin-left: 80px;
+            position: relative;
+            z-index: 10;
             h4 {
                 color: #fff;
             }
@@ -448,6 +479,19 @@
 
 #__in_video__player {
     display: none;
+}
+
+@media (max-width: 1900px) {
+    .in {
+        &-video {
+            &__text {
+                p {
+                    font-size: 16px;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 1520px) {
@@ -571,6 +615,13 @@
                 &__item {
                     &:first-child {
                         margin-left: 0;
+                    }
+                }
+            }
+            &.is--vw {
+                .in-video {
+                    &__text {
+                        margin-bottom: 50px;
                     }
                 }
             }
