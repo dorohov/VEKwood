@@ -183,6 +183,65 @@
             }
         }
     }
+    &__slider {
+        
+    }
+}
+
+.complect {
+    @extend .slide;
+    background: #292929;
+    overflow: hidden;
+    &__inner {
+        @extend .container;
+        display: flex;
+        align-items: center;
+        position: relative;
+        &::before {
+            content: 'V';
+            color: $color_brown-light;
+            font-size: 100px;
+            position: absolute;
+            left: 35%;
+            top: -160px;
+            font-weight: 600;
+            font-size: 500px;
+            opacity: .05;
+            z-index: 0;
+        }
+        &::after {
+            content: 'W';
+            color: $color_brown-light;
+            font-size: 100px;
+            position: absolute;
+            right: 0px;
+            bottom: -160px;
+            font-weight: 600;
+            font-size: 500px;
+            opacity: .05;
+            z-index: 0;
+        }
+    }
+    &__img {
+        max-width: 700px;
+        width: 100%;
+        margin-right: 100px;
+        z-index: 10;
+        position: relative;
+    }
+    &__content {
+        max-width: 650px;
+        z-index: 10;
+        position: relative;
+        p {
+            line-height: 23px;
+            font-size: 18px;
+            color: $color_brown-light;
+        }
+        .button {
+            margin-top: 40px;
+        }
+    }
 }
 
 @media (max-width: 1430px) {
@@ -249,6 +308,20 @@
             }
         }
     }
+    .complect {
+        &__inner {
+            flex-wrap: wrap;
+        }
+        &__img {
+            margin: 0 0 30px 0;
+            max-width: 100%;
+        }
+        &__content {
+            .button {
+                margin-top: 10px;
+            }
+        }
+    }
 }
 
 @media (max-width: $resp768) {
@@ -280,6 +353,17 @@
             &__left,
             &__right {
                 width: 100%;
+            }
+        }
+    }
+    .complect {
+        &__img {
+            margin-bottom: 10px;
+        }
+        &__content {
+            p {
+                font-size: 16px;
+                line-height: 18px;
             }
         }
     }
