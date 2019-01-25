@@ -15,6 +15,9 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     notify = require("gulp-notify"),
     htmlbeautify = require('gulp-html-beautify'),
+    minify = require('gulp-minify'),
+    concatCss = require('gulp-concat-css'),
+    stripCssComments = require('gulp-strip-css-comments'),
     sourcemaps = require('gulp-sourcemaps');
     // fontgen = require('gulp-fontgen');
 
@@ -40,6 +43,15 @@ function css() {
             }))
             .pipe(minifyCSS())
             .pipe(autoprefixer({browsers: ['> 2% in RU', 'last 4 version', 'ie 9', 'opera 12.1', 'ios 6', 'android 4']}))
+            .pipe(gulp.dest('dist/css'))
+            .on('end', browserSync.reload)
+}
+
+function createBundleCss() {
+    return gulp.src(['./dist/css/*.css', '!./dist/css/style.min.css'])
+            .pipe(concatCss('style.min.css'))
+            .pipe(minifyCSS())
+            .pipe(stripCssComments())
             .pipe(gulp.dest('dist/css'))
             .on('end', browserSync.reload)
 }
@@ -86,11 +98,16 @@ function js() {
                 .pipe(concat('main.js'))
                 .pipe(sourcemaps.write())
                 .pipe(gulp.dest('dist/js'))
-                // .pipe(uglify())
-                // .pipe(rename({suffix: '.min'}))
-                // .pipe(gulp.dest('dist/js'))
-                // .pipe(clean({force: true}))
                 .on('end', browserSync.reload)
+}
+
+function createBundleJs() {
+    return gulp.src(['./dist/js/parsley.min.js', './dist/js/svg4everybody.min.js', './dist/js/i18n/ru.js', './dist/js/imask.js', './dist/js/vivus.min.js', './dist/js/slick.min.js', './dist/js/svg4everybody.min.js', './dist/js/tippy.all.min.js', './dist/js/main.js'])
+            .pipe(sourcemaps.init())
+            .pipe(concat('bundle.js'))
+            .pipe(minify())
+            .pipe(gulp.dest('dist/js'))
+            .on('end', browserSync.reload)
 }
 
 // function fonts() {
@@ -118,12 +135,16 @@ gulp.task('html', html)
 // gulp.task('htmlNormalize', htmlNormalize)
 gulp.task('js', js)
 // gulp.task('fonts', fonts)
+gulp.task('createBundleJs', createBundleJs)
+gulp.task('createBundleCss', createBundleCss)
 gulp.task('browser_sync', browser_sync)
 
 gulp.task('build', function() {
     gulp.watch('src/html/**/*.html', gulp.series('html'))
     gulp.watch('src/scss/**/*.scss', gulp.series('css'))
     gulp.watch(assets.js, gulp.series('js'))
+    gulp.watch('dist/js/*.js', gulp.series('createBundleJs'))
+    gulp.watch('dist/css/*.css', gulp.series('createBundleCss'))
     // gulp.watch(assets.fonts, gulp.series('fonts'))
     gulp.watch(assets.svg, gulp.series('svgMap'))
     gulp.watch(assets.images, gulp.series('imageMinify'))
@@ -131,6 +152,6 @@ gulp.task('build', function() {
 })
 
 gulp.task('default', gulp.series(
-    gulp.parallel('html', 'css', 'js', 'svgMap', 'imageMinify'),
+    gulp.parallel('html', 'css', 'js', 'createBundleJs', 'createBundleCss', 'svgMap', 'imageMinify'),
     gulp.parallel('build', 'browser_sync')
 ))
