@@ -16,10 +16,11 @@
         })
 
         function openElement() {
-            if(itemActiveId) {
+
+            if(!itemActiveId) itemActiveId = 1
+
                 $('.slider__item').hide()
-                $('.slider__item[data-slider-item-id="' + itemActiveId + '"]').fadeIn()
-            }
+                $('.slider__item[data-slider-item-id="' + itemActiveId + '"]').fadeIn(1000)
         }
 
         $('.slider__down').click(function() {

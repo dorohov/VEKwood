@@ -23,6 +23,35 @@
                 }
             ]
         })
+        $('.slider4__list').slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            responsive: [
+                {
+                    breakpoint: 1530,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 900,
+                    settings: {
+                        slidesToShow: 2,
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        arrows: false
+                    }
+                }
+            ]
+        })
         $('.modal__slider__items').slick({
             infinite: true,
             slidesToShow: 1,

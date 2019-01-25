@@ -3,7 +3,7 @@
 <head>
     @@include('blocks/_head.html', {"title": "Дом из двойного бруса Vekwood"})
 </head>
-<body>
+<body class="__noslider">
     <header>
         @@include('blocks/main/_navbar.html', {"opacity": false})
     </header>
@@ -19,7 +19,64 @@
             })
             @@include('blocks/site/chome/_three.html')
             <div class="chome__slider">
-                @@include('blocks/site/_slider4.html')
+                @@include('items/_heading.html', {
+                    "sub": false,
+                    "text": "Похожие проекты",
+                    "color": "white",
+                    "align": "left"
+                })
+                @@include('blocks/site/_slider4.html', {
+                    "items": [
+                        {
+                            "uri": "double-beam.html",
+                            "name": "Дом из двойного бруса",
+                            "company": "Vekwood",
+                            "price": "150 000",
+                            "meters": "164",
+                            "img": "img/4slide1.jpg"
+                        },
+                        {
+                            "uri": "double-beam.html",
+                            "name": "Дом из двойного бруса",
+                            "company": "Vekwood",
+                            "price": "150 000",
+                            "meters": "164",
+                            "img": "img/4slide2.jpg"
+                        },
+                        {
+                            "uri": "double-beam.html",
+                            "name": "Дом из двойного бруса",
+                            "company": "Vekwood",
+                            "price": "150 000",
+                            "meters": "164",
+                            "img": "img/4slide3.jpg"
+                        },
+                        {
+                            "uri": "double-beam.html",
+                            "name": "Дом из двойного бруса",
+                            "company": "Vekwood",
+                            "price": "150 000",
+                            "meters": "164",
+                            "img": "img/4slide4.jpg"
+                        },
+                        {
+                            "uri": "double-beam.html",
+                            "name": "Дом из двойного бруса",
+                            "company": "Vekwood",
+                            "price": "150 000",
+                            "meters": "164",
+                            "img": "img/4slide1.jpg"
+                        },
+                        {
+                            "uri": "double-beam.html",
+                            "name": "Дом из двойного бруса",
+                            "company": "Vekwood",
+                            "price": "150 000",
+                            "meters": "164",
+                            "img": "img/4slide2.jpg"
+                        }
+                    ]
+                })
             </div>
             @@include('forms/_form_big.html', {
                 "heading": "Заказать расчет индивидуального проекта",

@@ -6,6 +6,7 @@
     line-height: $button_font_size;
     transition: .25s all ease;
     display: inline-block;
+    cursor: pointer;
     &.is--bordered {
         padding: 16px 32px 13px 32px;
         border: 2px solid $button_bordered_color;
@@ -19,6 +20,10 @@
             background: $button_bordered_color_h;
             color: $button_bordered_color_h_txt;
         }
+    }
+    &.is--grey {
+        border-color: #C4C4C4;
+        color: #C4C4C4;
     }
     &.is--classic {
         padding: 20px 55px;

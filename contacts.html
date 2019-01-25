@@ -3,14 +3,15 @@
 <head>
     <meta name="theme-color" content="#2E221C">
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>VEKwood - Контакты</title>
 <link rel="stylesheet" href="dist/css/slick.css">
 <link rel="stylesheet" href="dist/css/animate.css">
+<link rel="stylesheet" href="dist/css/tippy.css">
 <link rel="stylesheet" href="dist/css/style.css">
 </head>
-<body>
+<body class="__noslider">
     <header>
         <div class="navbar ">
     <div class="navbar__inner">
@@ -28,9 +29,9 @@
         </div>
         <div class="navbar__menu">
             <ul>
-    <li class="navbar__menu--item"><a href="#" class="navbar__menu--link">Каркасные дома</a></li>
-    <li class="navbar__menu--item"><a href="double-beam.html" class="navbar__menu--link">Двойной брус</a></li>
-    <li class="navbar__menu--item"><a href="#" class="navbar__menu--link">Деревянные фермы</a></li>
+    <li class="navbar__menu--item"><a href="landing1.html" class="navbar__menu--link">Каркасные дома</a></li>
+    <li class="navbar__menu--item"><a href="landing1.html" class="navbar__menu--link">Двойной брус</a></li>
+    <li class="navbar__menu--item"><a href="landing2.html" class="navbar__menu--link">Деревянные фермы</a></li>
     <li class="navbar__menu--item"><a href="planning.html" class="navbar__menu--link">Проектирование</a></li>
     <li class="navbar__menu--item navbar__menu--dropdown">
         <a href="about.html" class="navbar__menu--link">О компании</a>
@@ -59,9 +60,9 @@
         <div class="navbar__mobile--container">
             <div class="navbar__mobile--menu">
                 <ul>
-    <li class="navbar__mobile--item"><a href="#" class="navbar__mobile--link">Каркасные дома</a></li>
-    <li class="navbar__mobile--item"><a href="double-beam.html" class="navbar__mobile--link">Двойной брус</a></li>
-    <li class="navbar__mobile--item"><a href="#" class="navbar__mobile--link">Деревянные фермы</a></li>
+    <li class="navbar__mobile--item"><a href="landing1.html" class="navbar__mobile--link">Каркасные дома</a></li>
+    <li class="navbar__mobile--item"><a href="landing1.html" class="navbar__mobile--link">Двойной брус</a></li>
+    <li class="navbar__mobile--item"><a href="landing2.html" class="navbar__mobile--link">Деревянные фермы</a></li>
     <li class="navbar__mobile--item"><a href="planning.html" class="navbar__mobile--link">Проектирование</a></li>
     <li class="navbar__mobile--item navbar__mobile--dropdown">
         <a href="about.html" class="navbar__mobile--link">О компании</a>
@@ -128,21 +129,21 @@
     </main>
 
     <div class="preloader">
-    <svg class="animated infinite bounce delay-2s">
-        <use xlink:href="img/svg/sprites.svg#logo"></use>
-    </svg>
+    <div class="preloader-logo animated infinite bounce delay-2s">
+        
+    </div>
 </div>
 <footer class="footer">
     <div class="footer__inner">
         <div class="footer__soc">
             <ul class="social-btns">
-    <li><a href="#"><svg class="svg-youtube-dims">
+    <li><a href="https://www.youtube.com/" target="_blank"><svg class="svg-youtube-dims">
     <use xlink:href="img/svg/sprites.svg#youtube"></use>
 </svg></a></li>
-    <li><a href="#"><svg class="svg-vk-dims">
+    <li><a href="https://vk.com/" target="_blank"><svg class="svg-vk-dims">
     <use xlink:href="img/svg/sprites.svg#vk"></use>
 </svg></a></li>
-    <li><a href="#"><svg class="svg-instagram-dims">
+    <li><a href="https://www.instagram.com/" target="_blank"><svg class="svg-instagram-dims">
     <use xlink:href="img/svg/sprites.svg#instagram"></use>
 </svg></a></li>
 </ul>
@@ -150,9 +151,9 @@
         <div class="footer__menu">
             <nav>
                 <ul>
-                    <li><a href="#">Дома из двойного бруса</a></li>
-                    <li><a href="#">Каркасные дома</a></li>
-                    <li><a href="#">Стропильные конструкции</a></li>
+                    <li><a href="landing1.html">Дома из двойного бруса</a></li>
+                    <li><a href="landing1.html">Каркасные дома</a></li>
+                    <li><a href="landing2.html">Стропильные конструкции</a></li>
                 </ul>
             </nav>
         </div>
@@ -179,8 +180,15 @@
 <script src="./dist/js/slick.min.js"></script>
 <script src="./dist/js/svg4everybody.min.js"></script>
 <script src="./dist/js/jquery-ui.min.js"></script>
+<script src="./dist/js/tippy.all.min.js"></script>
 <script src="./dist/js/main.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANLxdBSU8fJGR5IzCxzgTbVTdgOsJXcq4&callback=initMap"></script>
 <script>svg4everybody();</script>
+<script type="text/javascript">
+    (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "https://vk.com/js/api/openapi.js?160"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'vk_openapi_js'));
+    (function() {
+      if (!window.VK || !VK.Widgets || !VK.Widgets.Post || !VK.Widgets.Post('vk_post_-126164263_133', -126164263, 133, 'rjn-7LuoqSUAkJqyCUQZ3FGnZ4a9')) setTimeout(arguments.callee, 50);
+    }());
+  </script>
 </body>
 </html>

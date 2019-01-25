@@ -184,7 +184,21 @@
         }
     }
     &__slider {
-        
+        @extend .slide;
+        background: #292929;
+        .slider4 {
+            max-width: 1820px;
+            margin: 0 auto;
+            padding: 0 45px;
+            .slick-arrow {
+                &.slick-next {
+                    right: -40px;
+                }
+                &.slick-prev {
+                    left: -40px;
+                }
+            }
+        }
     }
 }
 
@@ -319,6 +333,17 @@
         &__content {
             .button {
                 margin-top: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .chome {
+        &__slider {
+            .slider4 {
+                padding-left: 0;
+                padding-right: 0;
             }
         }
     }

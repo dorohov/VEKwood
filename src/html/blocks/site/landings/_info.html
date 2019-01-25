@@ -1,0 +1,25 @@
+<div class="l-info">
+    <div class="l-info__inner">
+        <div class="l-info__left">
+            @@for(var i = 0; i < 3; i++) {
+                <div class="l-info__block" data-itemid="`+i+`">
+                    <div class="l-info__block__title">`+items[i].title+`</div>
+                    <div class="l-info__block__desc">`+items[i].desc+`</div>
+                </div>
+            }
+        </div>
+        <div class="l-info__center">
+            <div class="l-info__center__inner">
+                <img src="img/vekwood_sq.png" alt="">
+            </div>
+        </div>
+        <div class="l-info__right">
+            @@for(var i = 3; i < 6; i++) {
+                <div class="l-info__block" data-itemid="`+i+`">
+                    <div class="l-info__block__title">`+items[i].title+`</div>
+                    <div class="l-info__block__desc">`+items[i].desc+`</div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

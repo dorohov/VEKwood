@@ -1,0 +1,14 @@
+<div class="slider4">
+    <div class="slider4__list">
+        @@for(var i = 0; i < items.length; i++) {
+            @@include('../../items/_slider4-item.html', {
+                "uri": "`+items[i].uri+`",
+                "name": "`+items[i].name+`",
+                "company": "`+items[i].company+`",
+                "price": "`+items[i].price+`",
+                "meters": "`+items[i].meters+`",
+                "img": "`+items[i].img+`"
+            })
+        }
+    </div>
+</div>

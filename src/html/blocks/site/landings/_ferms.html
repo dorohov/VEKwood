@@ -1,0 +1,47 @@
+<div class="l-ferms">
+    @@include('../../../items/_heading.html', {
+        "sub": false,
+        "text": "Фермы",
+        "align": "center",
+        "color": "white"
+    })
+    <div class="l-ferms__menu">
+        <div class="in-tw__menu">
+            <ul>
+                <li class="is--active"><a href="#">Для жилых домов</a></li>
+                <li><a href="#">Для коммерческих зданий</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="l-ferms__inner">
+        <ul>
+            <li>
+                <a href="#">
+                    @@include('_ferm-block.html', {
+                        "img": "img/ferm1.jpg",
+                        "title": "Фермы чердачного типа",
+                        "list": ["Полностью готовые изделия", "Монтаж без промежуточных опор", "Для любых типов кровли и покрытия"]
+                    })
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    @@include('_ferm-block.html', {
+                        "img": "img/ferm2.jpg",
+                        "title": "Фермы чердачного типа",
+                        "list": ["Полностью готовые изделия", "Монтаж без промежуточных опор", "Для любых типов кровли и покрытия"]
+                    })
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    @@include('_ferm-block.html', {
+                        "img": "img/ferm3.jpg",
+                        "title": "Фермы чердачного типа",
+                        "list": ["Полностью готовые изделия", "Монтаж без промежуточных опор", "Для любых типов кровли и покрытия"]
+                    })
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

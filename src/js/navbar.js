@@ -20,7 +20,7 @@
 
             if(userScroll > navbar.outerHeight() && !navbar.hasClass(classes.fixed)) {
                 navbar.addClass(classes.fixed)
-                $('body').css('padding-top', navbar.outerHeight() + 'px')
+                $('.__noslider').css('padding-top', navbar.outerHeight() + 'px')
                 navbar.removeClass(classes.opacity)
             }
             if(userScroll < navbar.outerHeight()) {

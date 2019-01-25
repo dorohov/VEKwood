@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    @@include('blocks/_head.html', {"title": "404"})
+</head>
+<body>
+    <header>
+        @@include('blocks/main/_navbar.html', {"opacity": false})
+    </header>
+    <main>
+        <div class="page404">
+            <div class="page404__inner">
+                <div class="page404__top">
+                    <div class="page404__num">4</div>
+                    <div class="page404__img">
+                        <img src="img/home404.png" alt="">
+                    </div>
+                    <div class="page404__num">4</div>
+                </div>
+                <h1 class="page404__title">Страница не найдена</h1>
+                <div class="page404__subtitle">Запрашиваемая Вами страница не найдена или никогда не существовала</div>
+                <div class="page404__btn">
+                    @@include('items/_button.html', {
+                        "type": "classic",
+                        "url": "index.html",
+                        "text": "На главную"
+                    })
+                </div>
+            </div>
+        </div>
+    </main>
+    @@include('blocks/_footer.html')
+    @@include('blocks/_scripts.html')
+</body>
+</html>

@@ -3,17 +3,32 @@
     height: 100%;
     position: fixed;
     z-index: 9999999999;
-    background: red;
+    background-color: $color-dark;
     top: 0;
     left: 0;
     display: none;
     &-logo {
-        animation-duration: 3s;
-        animation-delay: 2s;
-        animation-iteration-count: infinite;
+        background-image: url('../../img/svg/sprites.svg#logo');
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 20%;
     }
 }
 
 .page-loading .preloader {
     display: block;
+}
+
+.page-loading {
+    overflow: hidden;
+}
+
+@media (max-width: $resp768) {
+    .preloader {
+        &-logo {
+            background-size: 60%;
+        }
+    }
 }

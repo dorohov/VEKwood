@@ -1,4 +1,3 @@
-/*
 var tag = document.createElement('script')
 tag.src = "https://www.youtube.com/iframe_api";
         
@@ -50,4 +49,3 @@ for(var i = 0; i < buttons.length; i++) {
         }
     }, false);
 }
-*/

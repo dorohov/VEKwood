@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    @@include('blocks/_head.html', {"title": "Деревянные фермы"})
+</head>
+<body>
+    <header>
+        @@include('blocks/main/_navbar.html', {"opacity": true})
+        @@include('blocks/site/_slider.html')
+    </header>
+    <main>
+        @@include('blocks/site/_vslide.html')
+        @@include('blocks/site/landings/_3dmodels.html')
+        @@include('blocks/site/landings/_ferms.html')
+        @@include('blocks/site/landings/_vk.html')
+        @@include('blocks/site/landings/_content.html')
+        @@include('forms/_form_big.html', {
+            "heading": "Заказать расчет индивидуального проекта",
+            "sub_heading": "Закажите проектную документацию у тех, кто разбирается в строительсве. <br> Мы ответим вам в течение 1 рабочего дня"
+        })
+    </main>
+    @@include('modals/3d.html')
+    @@include('blocks/_footer.html')
+    @@include('blocks/_scripts.html')
+</body>
+</html>

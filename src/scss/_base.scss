@@ -1,9 +1,10 @@
 body {
     font-family: 'Muller';
     background: $color_bg;
-    &.is--modal {
-        overflow: hidden;
-    }
+}
+
+.is--modal {
+    overflow: hidden;
 }
 
 * {
@@ -92,5 +93,11 @@ main {
                 width: 85%;
             }
         }
+    }
+}
+
+.slick-slide {
+    &:focus, a {
+        outline: none !important;
     }
 }

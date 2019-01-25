@@ -6,7 +6,7 @@
                 $('.modal__slider__items').slick('slickNext')
             }
             var wind = $('.modal[data-modalid="' + $(this).attr('data-modalid') + '"]').show();
-            $('body').addClass('is--modal')
+            $('body, html').addClass('is--modal')
         })
 
         $('.modal-overflow').on('click', function(e) {
@@ -19,7 +19,7 @@
 
         function closeModal(e) {
             $(e.target).closest('.modal').hide();
-            $('body').removeClass('is--modal')
+            $('body, html').removeClass('is--modal')
         }
     })
 })(jQuery);

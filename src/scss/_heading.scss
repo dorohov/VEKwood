@@ -34,6 +34,11 @@
             }
         }
     }
+    &.is--subd {
+        .heading_sub {
+            color: $color_brown-light;
+        }
+    }
     &_sub {
         line-height: 23px;
         font-size: 18px;
