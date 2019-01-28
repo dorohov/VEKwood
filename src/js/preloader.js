@@ -19,6 +19,7 @@ var preloadOut = setInterval(function() {
 $(window).on('load', function() {
     $('img').css('visibility', 'visible')
     $('.slider__item__img').css('visibility', 'visible')
+    $('.production__block ').css('visibility', 'visible')
     console.log('СТРАНИЦА ЗАГРУЖЕНА')
     setTimeout(function() {
         $('#preload').css('width', '100%');
