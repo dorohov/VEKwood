@@ -138,9 +138,7 @@
     </div>
     </main>
     <div class="preloader">
-    <div class="preloader-logo animated infinite bounce delay-2s">
-        
-    </div>
+    <div class="preloader__inner" id="preload"></div>
 </div>
 <footer class="footer">
     <div class="footer__inner">
@@ -183,6 +181,7 @@
 </footer>
     <script src="./libs/jquery-3.3.1.min.js"></script>
 <script src="./libs/jquery-ui.min.js"></script>
+<script src="./dist/js/blazy.min.js"></script>
 <script src="./dist/js/bundle-min.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANLxdBSU8fJGR5IzCxzgTbVTdgOsJXcq4&callback=initMap"></script>
 <script>svg4everybody();</script>
@@ -192,5 +191,10 @@
       if (!window.VK || !VK.Widgets || !VK.Widgets.Post || !VK.Widgets.Post('vk_post_-126164263_133', -126164263, 133, 'rjn-7LuoqSUAkJqyCUQZ3FGnZ4a9')) setTimeout(arguments.callee, 50);
     }());
   </script>
+<script>
+var bLazy = new Blazy({
+    // options
+});
+</script>
 </body>
 </html>

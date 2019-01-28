@@ -46,6 +46,7 @@
     &-catalog {
         @extend .slide;
         background: $color-dark;
+        padding-bottom: 60px;
         &__inner {
             display: flex;
             flex-wrap: wrap;
@@ -61,6 +62,7 @@
     &-vk {
         @extend .slide;
         background: $color-dark;
+        padding-top: 60px;
         &__inner {
             @extend .container;
             margin-bottom: 60px;

@@ -75,4 +75,11 @@
             ]
         })
     })
+    $('.chome-on__modal__pslider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1
+    })
+    $('.chome-on__modal__pslider').on('setPosition', function(e, slick) {
+        $('.chome-on__modal__nav').html('<span>0' + (slick.currentSlide + 1) + '</span>/0' + slick.slideCount);
+    })
 })(jQuery);
