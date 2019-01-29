@@ -30,6 +30,7 @@
                 max-width: 490px;
                 width: 100%;
                 position: relative;
+                z-index: 10;
                 &::before {
                     content: 'V';
                     color: $color_brown-light;
@@ -39,7 +40,7 @@
                     font-weight: 600;
                     font-size: 400px;
                     opacity: .05;
-                    z-index: 5;
+                    z-index: -1;
                 }
                 &::after {
                     content: 'W';
@@ -50,7 +51,7 @@
                     font-weight: 600;
                     font-size: 400px;
                     opacity: .05;
-                    z-index: 5;
+                    z-index: -1;
                 }
                 p {
                     line-height: 23px;

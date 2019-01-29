@@ -1,0 +1,14 @@
+.article {
+    background: $color_dark;
+    min-height: calc(100vh - 200px);
+    @extend .page;
+    &__inner {
+        @extend .container;
+    }
+    &__content {
+        overflow: hidden;
+        .in-instruction__inner {
+            @extend .container;
+        }
+    }
+}

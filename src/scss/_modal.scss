@@ -95,8 +95,6 @@
     }
     &-content {
         max-height: 70vh;
-        overflow: scroll;
-    -webkit-overflow-scrolling: touch;
     }
     &__slider {
         &__items {
@@ -200,6 +198,10 @@
                     margin: 0 auto;
                 }
             }
+        }
+        &-content {
+            overflow: scroll;
+        -webkit-overflow-scrolling: touch;
         }
     }
 }
