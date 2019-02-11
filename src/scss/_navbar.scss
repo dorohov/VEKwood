@@ -69,6 +69,11 @@
                         color: rgba($navbar_items_color, 1);
                     }
                 }
+                &.is--active {
+                    a {
+                        color: $color-yellow;
+                    }
+                }
             }
         }
         &--dropdown {
@@ -200,6 +205,11 @@
                             &::after {
                                 width: 100%;
                             }
+                        }
+                    }
+                    &.is--active {
+                        a {
+                            color: $color-yellow;
                         }
                     }
                 }

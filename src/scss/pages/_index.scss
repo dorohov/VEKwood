@@ -79,6 +79,8 @@
                         position: relative;
                         z-index: 10;
                         transition: .25s all ease;
+                        cursor: pointer;
+                        border: 1px solid transparent;
                     }
                     &.is--active {
                         a {

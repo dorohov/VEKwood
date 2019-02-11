@@ -8,12 +8,12 @@
     <div class="l-ferms__menu">
         <div class="in-tw__menu">
             <ul>
-                <li class="is--active"><a href="#">Для жилых домов</a></li>
-                <li><a href="#">Для коммерческих зданий</a></li>
+                <li class="tab-target is--active" data-tabid="f1"><a>Для жилых домов</a></li>
+                <li class="tab-target" data-tabid="f2"><a>Для коммерческих зданий</a></li>
             </ul>
         </div>
     </div>
-    <div class="l-ferms__inner">
+    <div class="l-ferms__inner tab-container" data-tabid="f1">
         <ul>
             <li>
                 <a href="#">
@@ -38,6 +38,37 @@
                     @@include('_ferm-block.html', {
                         "img": "img/ferm3.jpg",
                         "title": "Фермы чердачного типа",
+                        "list": ["Полностью готовые изделия", "Монтаж без промежуточных опор", "Для любых типов кровли и покрытия"]
+                    })
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="l-ferms__inner tab-container" data-tabid="f2">
+        <ul>
+            <li>
+                <a href="#">
+                    @@include('_ferm-block.html', {
+                        "img": "img/ferm1.jpg",
+                        "title": "Фермы чердачного типа2",
+                        "list": ["Полностью готовые изделия", "Монтаж без промежуточных опор", "Для любых типов кровли и покрытия"]
+                    })
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    @@include('_ferm-block.html', {
+                        "img": "img/ferm2.jpg",
+                        "title": "Фермы чердачного типа2",
+                        "list": ["Полностью готовые изделия", "Монтаж без промежуточных опор", "Для любых типов кровли и покрытия"]
+                    })
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    @@include('_ferm-block.html', {
+                        "img": "img/ferm3.jpg",
+                        "title": "Фермы чердачного типа2",
                         "list": ["Полностью готовые изделия", "Монтаж без промежуточных опор", "Для любых типов кровли и покрытия"]
                     })
                 </a>
