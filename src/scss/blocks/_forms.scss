@@ -288,6 +288,26 @@ input[type="submit"] {
     }
 }
 
+input[type="text"].is--catalog,
+select.is--catalog {
+    padding: 5px;
+    width: 60px;
+    height: 30px;
+    border: none;
+    background: rgba(#fff, .1);
+    color: #fff;
+    &::placeholder {
+        color: #fff;
+    }
+}
+
+select.is--catalog {
+    width: max-content !important;
+    option {
+        color: #000;
+    }
+}
+
 @media (max-width: $resp1025) {
     .form {
         &_in {

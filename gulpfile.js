@@ -143,7 +143,7 @@ gulp.task('build', function() {
     gulp.watch('src/html/**/*.html', gulp.series('html'))
     gulp.watch('src/scss/**/*.scss', gulp.series('css'))
     gulp.watch(assets.js, gulp.series('js'))
-    gulp.watch('dist/js/main.js', gulp.series('createBundleJs'))
+    // gulp.watch('dist/js/main.js', gulp.series('createBundleJs'))
     gulp.watch('dist/css/style.css', gulp.series('createBundleCss'))
     // gulp.watch(assets.fonts, gulp.series('fonts'))
     gulp.watch(assets.svg, gulp.series('svgMap'))
@@ -152,6 +152,6 @@ gulp.task('build', function() {
 })
 
 gulp.task('default', gulp.series(
-    gulp.parallel('html', 'css', 'js', 'createBundleJs', 'createBundleCss', 'svgMap', 'imageMinify'),
+    gulp.parallel('html', 'css', 'js','createBundleCss', 'svgMap', 'imageMinify'),
     gulp.parallel('build', 'browser_sync')
 ))
